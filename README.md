@@ -1,73 +1,308 @@
-<div align="center">
+# Claude Code Plugins: Orchestration and Automation
 
-<p align="center">
-  <a href="https://hydrogen.shopify.dev"><img src="./.github/images/hydrogen-logo.svg" alt="Hydrogen Logo"/></a>
-</p>
+> **⚡ Updated for Opus 4.5, Sonnet 4.5 & Haiku 4.5** — Three-tier model strategy for optimal performance
 
-[![MIT License](https://img.shields.io/github/license/shopify/hydrogen)](LICENSE.md)
-[![npm downloads](https://img.shields.io/npm/dm/@shopify/hydrogen.svg?sanitize=true)](https://npmcharts.com/compare/@shopify/hydrogen?minimal=true)
+[![Run in Smithery](https://smithery.ai/badge/skills/wshobson)](https://smithery.ai/skills?ns=wshobson&utm_source=github&utm_medium=badge)
 
-📚 [Docs](https://shopify.dev/custom-storefronts/hydrogen) | 💬 [Discussions](https://github.com/Shopify/hydrogen/discussions) | 📝 [Changelog](./packages/hydrogen/CHANGELOG.md)
+> **🎯 Agent Skills Enabled** — 47 specialized skills extend Claude's capabilities across plugins with progressive disclosure
 
-Hydrogen is Shopify's stack for headless commerce. It provides a set of tools, utilities, and best-in-class examples for building dynamic and performant commerce applications. Hydrogen is designed to dovetail with [React Router](https://reactrouter.com/), the modern multi-strategy router for React, but it also provides a React library portable to other supporting frameworks.
+A comprehensive production-ready system combining **91 specialized AI agents**, **15 multi-agent workflow orchestrators**, **47 agent skills**, and **45 development tools** organized into **65 focused, single-purpose plugins** for [Claude Code](https://docs.claude.com/en/docs/claude-code/overview).
 
- </div>
+## Overview
 
-## Hydrogen Legacy v1
+This unified repository provides everything needed for intelligent automation and multi-agent orchestration across modern software development:
 
-Hydrogen legacy v1 has been moved [to a separate repo](https://github.com/Shopify/hydrogen-v1) and the [docs can be found here](https://shopify.github.io/hydrogen-v1/tutorials/getting-started).
+- **65 Focused Plugins** - Granular, single-purpose plugins optimized for minimal token usage and composability
+- **91 Specialized Agents** - Domain experts with deep knowledge across architecture, languages, infrastructure, quality, data/AI, documentation, business operations, and SEO
+- **47 Agent Skills** - Modular knowledge packages with progressive disclosure for specialized expertise
+- **15 Workflow Orchestrators** - Multi-agent coordination systems for complex operations like full-stack development, security hardening, ML pipelines, and incident response
+- **45 Development Tools** - Optimized utilities including project scaffolding, security scanning, test automation, and infrastructure setup
 
-## Getting started with Hydrogen
+### Key Features
 
-**Requirements:**
+- **Granular Plugin Architecture**: 65 focused plugins optimized for minimal token usage
+- **Comprehensive Tooling**: 45 development tools including test generation, scaffolding, and security scanning
+- **100% Agent Coverage**: All plugins include specialized agents
+- **Agent Skills**: 47 specialized skills following for progressive disclosure and token efficiency
+- **Clear Organization**: 23 categories with 1-6 plugins each for easy discovery
+- **Efficient Design**: Average 3.4 components per plugin (follows Anthropic's 2-8 pattern)
 
-- Node.js version 18.0.0 or higher
-- `npm` (or your package manager of choice, such as `yarn` or `pnpm`)
+### How It Works
 
-1. Install the latest version of Hydrogen:
+Each plugin is completely isolated with its own agents, commands, and skills:
 
-   ```bash
-   npm create @shopify/hydrogen@latest
-   ```
+- **Install only what you need** - Each plugin loads only its specific agents, commands, and skills
+- **Minimal token usage** - No unnecessary resources loaded into context
+- **Mix and match** - Compose multiple plugins for complex workflows
+- **Clear boundaries** - Each plugin has a single, focused purpose
+- **Progressive disclosure** - Skills load knowledge only when activated
 
-1. Run the local development server:
+**Example**: Installing `python-development` loads 3 Python agents, 1 scaffolding tool, and makes 5 skills available (~300 tokens), not the entire marketplace.
 
-   ```bash
-   npm install
-   npm run dev
-   ```
+## Quick Start
 
-1. Open your new Hydrogen app running at <http://localhost:3000>.
+### Step 1: Add the Marketplace
 
-See the complete [Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen).
+Add this marketplace to Claude Code:
 
-## Packages in this repo
+```bash
+/plugin marketplace add wshobson/agents
+```
 
-Hydrogen is organized as a [monorepo](https://monorepo.tools/), which includes multiple packages that can be used together.
+This makes all 65 plugins available for installation, but **does not load any agents or tools** into your context.
 
-| Package                                                    | Latest version                                                                                                                                | Description                                                                                                    | Readme                                      |
-| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [`@shopify/hydrogen`](/packages/hydrogen/)                 | [![Latest badge](https://img.shields.io/npm/v/@shopify/hydrogen/latest.svg)](https://www.npmjs.com/package/@shopify/hydrogen)                 | Opinionated tools, utilities, and best-in-class examples for building a commerce application with React Router. | [Readme](/packages/hydrogen#readme)         |
-| [`@shopify/hydrogen-react`](/packages/hydrogen-react/)     | [![Latest badge](https://img.shields.io/npm/v/@shopify/hydrogen-react/latest.svg)](https://www.npmjs.com/package/@shopify/hydrogen-react)     | Unopionated and performant library of Shopify-specific commerce components, hooks, and utilities.              | [Readme](/packages/hydrogen-react#readme)   |
-| [`@shopify/cli-hydrogen`](/packages/cli/)                  | [![Latest badge](https://img.shields.io/npm/v/@shopify/cli-hydrogen/latest.svg)](https://www.npmjs.com/package/@shopify/cli-hydrogen)         | Hydrogen extension for [Shopify CLI](https://shopify.dev/docs/custom-storefronts/hydrogen/cli).                | [Readme](/packages/cli#readme)              |
-| [`@shopify/create-hydrogen`](/packages/create-hydrogen/)   | [![Latest badge](https://img.shields.io/npm/v/@shopify/create-hydrogen/latest.svg)](https://www.npmjs.com/package/@shopify/create-hydrogen)   | Generate a new Hydrogen project from the command line.                                                         | [Readme](/packages/create-hydrogen#readme)  |
-| [`@shopify/hydrogen-codegen`](/packages/hydrogen-codegen/) | [![Latest badge](https://img.shields.io/npm/v/@shopify/hydrogen-codegen/latest.svg)](https://www.npmjs.com/package/@shopify/hydrogen-codegen) | Generate types for Storefront API and Customer Account API queries automatically.                              | [Readme](/packages/hydrogen-codegen#readme) |
-| [`@shopify/mini-oxygen`](/packages/mini-oxygen/)           | [![Latest badge](https://img.shields.io/npm/v/@shopify/mini-oxygen/latest.svg)](https://www.npmjs.com/package/@shopify/mini-oxygen)           | A local runtime for Hydrogen apps that simulates the Oxygen production environment.                            | [Readme](/packages/mini-oxygen#readme)      |
+### Step 2: Install Plugins
 
-## Versioning
+Browse available plugins:
 
-Hydrogen and hydrogen-react are tied to specific versions of the [Shopify Storefront API](https://shopify.dev/api/storefront) and [Customer Account API](https://shopify.dev/docs/api/customer), which follow [calver](https://calver.org/).
+```bash
+/plugin
+```
 
-For example, if you're using Storefront API or Customer Account API version `2025-07`, then Hydrogen and hydrogen-react versions `2025.7.x` are fully compatible.
+Install the plugins you need:
 
-If the Storefront API or Customer Account API version updates include breaking changes, then Hydrogen and hydrogen-react may also include breaking changes. Because the API versions are updated every three months, breaking changes could occur every three months.
+```bash
+# Essential development plugins
+/plugin install python-development          # Python with 5 specialized skills
+/plugin install javascript-typescript       # JS/TS with 4 specialized skills
+/plugin install backend-development         # Backend APIs with 3 architecture skills
 
-Learn more about API [release schedules](https://shopify.dev/api/usage/versioning#release-schedule) at Shopify.
+# Infrastructure & operations
+/plugin install kubernetes-operations       # K8s with 4 deployment skills
+/plugin install cloud-infrastructure        # AWS/Azure/GCP with 4 cloud skills
 
-## Contributing to Hydrogen
+# Security & quality
+/plugin install security-scanning           # SAST with security skill
+/plugin install code-review-ai             # AI-powered code review
 
-[Read our contributing guide](CONTRIBUTING.md)
+# Full-stack orchestration
+/plugin install full-stack-orchestration   # Multi-agent workflows
+```
 
-## Other handy links
+Each installed plugin loads **only its specific agents, commands, and skills** into Claude's context.
 
-[Learn more about Hydrogen](https://shopify.dev/hydrogen).
+## Documentation
+
+### Core Guides
+
+- **[Plugin Reference](docs/plugins.md)** - Complete catalog of all 65 plugins
+- **[Agent Reference](docs/agents.md)** - All 91 agents organized by category
+- **[Agent Skills](docs/agent-skills.md)** - 47 specialized skills with progressive disclosure
+- **[Usage Guide](docs/usage.md)** - Commands, workflows, and best practices
+- **[Architecture](docs/architecture.md)** - Design principles and patterns
+
+### Quick Links
+
+- [Installation](#quick-start) - Get started in 2 steps
+- [Essential Plugins](docs/plugins.md#quick-start---essential-plugins) - Top plugins for immediate productivity
+- [Command Reference](docs/usage.md#command-reference-by-category) - All slash commands organized by category
+- [Multi-Agent Workflows](docs/usage.md#multi-agent-workflow-examples) - Pre-configured orchestration examples
+- [Model Configuration](docs/agents.md#model-configuration) - Haiku/Sonnet hybrid orchestration
+
+## What's New
+
+### Agent Skills (47 skills across 14 plugins)
+
+Specialized knowledge packages following Anthropic's progressive disclosure architecture:
+
+**Language Development:**
+- **Python** (5 skills): async patterns, testing, packaging, performance, UV package manager
+- **JavaScript/TypeScript** (4 skills): advanced types, Node.js patterns, testing, modern ES6+
+
+**Infrastructure & DevOps:**
+- **Kubernetes** (4 skills): manifests, Helm charts, GitOps, security policies
+- **Cloud Infrastructure** (4 skills): Terraform, multi-cloud, hybrid networking, cost optimization
+- **CI/CD** (4 skills): pipeline design, GitHub Actions, GitLab CI, secrets management
+
+**Development & Architecture:**
+- **Backend** (3 skills): API design, architecture patterns, microservices
+- **LLM Applications** (4 skills): LangChain, prompt engineering, RAG, evaluation
+
+**Blockchain & Web3** (4 skills): DeFi protocols, NFT standards, Solidity security, Web3 testing
+
+**And more:** Framework migration, observability, payment processing, ML operations, security scanning
+
+[→ View complete skills documentation](docs/agent-skills.md)
+
+### Three-Tier Model Strategy
+
+Strategic model assignment for optimal performance and cost:
+
+| Tier | Model | Agents | Use Case |
+|------|-------|--------|----------|
+| **Tier 1** | Opus 4.5 | 42 | Critical architecture, security, ALL code review, production coding (language pros, frameworks) |
+| **Tier 2** | Inherit | 42 | Complex tasks - user chooses model (AI/ML, backend, frontend/mobile, specialized) |
+| **Tier 3** | Sonnet | 51 | Support with intelligence (docs, testing, debugging, network, API docs, DX, legacy, payments) |
+| **Tier 4** | Haiku | 18 | Fast operational tasks (SEO, deployment, simple docs, sales, content, search) |
+
+**Why Opus 4.5 for Critical Agents?**
+- 80.9% on SWE-bench (industry-leading)
+- 65% fewer tokens for complex tasks
+- Best for architecture decisions and security audits
+
+**Tier 2 Flexibility (`inherit`):**
+Agents marked `inherit` use your session's default model, letting you balance cost and capability:
+- Set via `claude --model opus` or `claude --model sonnet` when starting a session
+- Falls back to Sonnet 4.5 if no default specified
+- Perfect for frontend/mobile developers who want cost control
+- AI/ML engineers can choose Opus for complex model work
+
+**Cost Considerations:**
+- **Opus 4.5**: $5/$25 per million input/output tokens - Premium for critical work
+- **Sonnet 4.5**: $3/$15 per million tokens - Balanced performance/cost
+- **Haiku 4.5**: $1/$5 per million tokens - Fast, cost-effective operations
+- Opus's 65% token reduction on complex tasks often offsets higher rate
+- Use `inherit` tier to control costs for high-volume use cases
+
+Orchestration patterns combine models for efficiency:
+```
+Opus (architecture) → Sonnet (development) → Haiku (deployment)
+```
+
+[→ View model configuration details](docs/agents.md#model-configuration)
+
+## Popular Use Cases
+
+### Full-Stack Feature Development
+
+```bash
+/full-stack-orchestration:full-stack-feature "user authentication with OAuth2"
+```
+
+Coordinates 7+ agents: backend-architect → database-architect → frontend-developer → test-automator → security-auditor → deployment-engineer → observability-engineer
+
+[→ View all workflow examples](docs/usage.md#multi-agent-workflow-examples)
+
+### Security Hardening
+
+```bash
+/security-scanning:security-hardening --level comprehensive
+```
+
+Multi-agent security assessment with SAST, dependency scanning, and code review.
+
+### Python Development with Modern Tools
+
+```bash
+/python-development:python-scaffold fastapi-microservice
+```
+
+Creates production-ready FastAPI project with async patterns, activating skills:
+- `async-python-patterns` - AsyncIO and concurrency
+- `python-testing-patterns` - pytest and fixtures
+- `uv-package-manager` - Fast dependency management
+
+### Kubernetes Deployment
+
+```bash
+# Activates k8s skills automatically
+"Create production Kubernetes deployment with Helm chart and GitOps"
+```
+
+Uses kubernetes-architect agent with 4 specialized skills for production-grade configs.
+
+[→ View complete usage guide](docs/usage.md)
+
+## Plugin Categories
+
+**23 categories, 65 plugins:**
+
+- 🎨 **Development** (4) - debugging, backend, frontend, multi-platform
+- 📚 **Documentation** (3) - code docs, API specs, diagrams, C4 architecture
+- 🔄 **Workflows** (3) - git, full-stack, TDD
+- ✅ **Testing** (2) - unit testing, TDD workflows
+- 🔍 **Quality** (3) - code review, comprehensive review, performance
+- 🤖 **AI & ML** (4) - LLM apps, agent orchestration, context, MLOps
+- 📊 **Data** (2) - data engineering, data validation
+- 🗄️ **Database** (2) - database design, migrations
+- 🚨 **Operations** (4) - incident response, diagnostics, distributed debugging, observability
+- ⚡ **Performance** (2) - application performance, database/cloud optimization
+- ☁️ **Infrastructure** (5) - deployment, validation, Kubernetes, cloud, CI/CD
+- 🔒 **Security** (4) - scanning, compliance, backend/API, frontend/mobile
+- 💻 **Languages** (7) - Python, JS/TS, systems, JVM, scripting, functional, embedded
+- 🔗 **Blockchain** (1) - smart contracts, DeFi, Web3
+- 💰 **Finance** (1) - quantitative trading, risk management
+- 💳 **Payments** (1) - Stripe, PayPal, billing
+- 🎮 **Gaming** (1) - Unity, Minecraft plugins
+- 📢 **Marketing** (4) - SEO content, technical SEO, SEO analysis, content marketing
+- 💼 **Business** (3) - analytics, HR/legal, customer/sales
+- And more...
+
+[→ View complete plugin catalog](docs/plugins.md)
+
+## Architecture Highlights
+
+### Granular Design
+
+- **Single responsibility** - Each plugin does one thing well
+- **Minimal token usage** - Average 3.4 components per plugin
+- **Composable** - Mix and match for complex workflows
+- **100% coverage** - All 91 agents accessible across plugins
+
+### Progressive Disclosure (Skills)
+
+Three-tier architecture for token efficiency:
+1. **Metadata** - Name and activation criteria (always loaded)
+2. **Instructions** - Core guidance (loaded when activated)
+3. **Resources** - Examples and templates (loaded on demand)
+
+### Repository Structure
+
+```
+claude-agents/
+├── .claude-plugin/
+│   └── marketplace.json          # 65 plugins
+├── plugins/
+│   ├── python-development/
+│   │   ├── agents/               # 3 Python experts
+│   │   ├── commands/             # Scaffolding tool
+│   │   └── skills/               # 5 specialized skills
+│   ├── kubernetes-operations/
+│   │   ├── agents/               # K8s architect
+│   │   ├── commands/             # Deployment tools
+│   │   └── skills/               # 4 K8s skills
+│   └── ... (63 more plugins)
+├── docs/                          # Comprehensive documentation
+└── README.md                      # This file
+```
+
+[→ View architecture details](docs/architecture.md)
+
+## Contributing
+
+To add new agents, skills, or commands:
+
+1. Identify or create the appropriate plugin directory in `plugins/`
+2. Create `.md` files in the appropriate subdirectory:
+   - `agents/` - For specialized agents
+   - `commands/` - For tools and workflows
+   - `skills/` - For modular knowledge packages
+3. Follow naming conventions (lowercase, hyphen-separated)
+4. Write clear activation criteria and comprehensive content
+5. Update the plugin definition in `.claude-plugin/marketplace.json`
+
+See [Architecture Documentation](docs/architecture.md) for detailed guidelines.
+
+## Resources
+
+### Documentation
+- [Claude Code Documentation](https://docs.claude.com/en/docs/claude-code/overview)
+- [Plugins Guide](https://docs.claude.com/en/docs/claude-code/plugins)
+- [Subagents Guide](https://docs.claude.com/en/docs/claude-code/sub-agents)
+- [Agent Skills Guide](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
+- [Slash Commands Reference](https://docs.claude.com/en/docs/claude-code/slash-commands)
+
+### This Repository
+- [Plugin Reference](docs/plugins.md)
+- [Agent Reference](docs/agents.md)
+- [Agent Skills Guide](docs/agent-skills.md)
+- [Usage Guide](docs/usage.md)
+- [Architecture](docs/architecture.md)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=wshobson/agents&type=date&legend=top-left)](https://www.star-history.com/#wshobson/agents&type=date&legend=top-left)
