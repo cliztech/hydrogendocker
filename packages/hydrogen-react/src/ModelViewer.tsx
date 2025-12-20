@@ -135,7 +135,35 @@ export function ModelViewer(props: ModelViewerProps): JSX.Element | null {
   ]);
 
   if (modelViewerLoadedStatus !== 'done') {
-    // TODO: What do we want to display while the model-viewer library loads?
+    const posterUrl = passthroughProps.poster || data.previewImage?.url;
+    if (posterUrl) {
+      return (
+        <div
+          className={className}
+          id={passthroughProps.id ?? data.id}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100%',
+            width: '100%',
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+            ...(passthroughProps.style as React.CSSProperties),
+          }}
+        >
+          <img
+            src={posterUrl}
+            alt={data.alt || 'Model poster'}
+            style={{
+              objectFit: 'cover',
+              width: '100%',
+              height: '100%',
+              display: 'block',
+            }}
+          />
+        </div>
+      );
+    }
     return null;
   }
 
