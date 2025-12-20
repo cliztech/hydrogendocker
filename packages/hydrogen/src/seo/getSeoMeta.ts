@@ -54,8 +54,12 @@ export function getSeoMeta(
       }
     }, {}) || ({} as SeoConfig);
 
-  for (const seoKey of Object.keys(dedupedSeoInput)) {
+  const keys = Object.keys(dedupedSeoInput) as (keyof SeoConfig)[];
+
+  for (const seoKey of keys) {
     switch (seoKey) {
+      case 'titleTemplate':
+        break;
       case 'title': {
         const content = validate(schema.title, dedupedSeoInput.title);
         const title = renderTitle(dedupedSeoInput?.titleTemplate, content);
@@ -269,8 +273,7 @@ export function getSeoMeta(
       }
 
       default: {
-        // TODO: We should be able to catch unaccounted for keys at compile time
-        // let exhaustiveCheck: never = seoKey;
+        const exhaustiveCheck: never = seoKey;
 
         break;
       }
