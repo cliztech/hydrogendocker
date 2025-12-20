@@ -263,6 +263,11 @@ export function setupOxygenMiddleware(
   viteDevServer.httpServer?.listening
     ? warmupWorkerdCache()
     : viteDevServer.httpServer?.once('listening', warmupWorkerdCache);
+
+  const warnInspector = () => miniOxygen?.reloadInspector();
+  viteDevServer.watcher.on('change', warnInspector);
+  viteDevServer.watcher.on('add', warnInspector);
+  viteDevServer.watcher.on('unlink', warnInspector);
 }
 
 function getViteUrl(viteDevServer: ViteDevServer) {

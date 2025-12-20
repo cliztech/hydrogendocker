@@ -100,6 +100,14 @@ export function createInspectorConnector(options: {
       }
     }
   };
+
+  const reloadInspectorWarning = () => {
+    inspectorProxy?.sendReloadWarning();
+  };
+
+  return Object.assign(reconnect, {
+    reloadInspectorWarning,
+  });
 }
 
 /**

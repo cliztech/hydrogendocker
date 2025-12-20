@@ -218,9 +218,10 @@ export function createInspectorProxy(
     // In case this is a DevTools connection, send a warning
     // message to the console to inform about reconnection.
     // VSCode can reconnect automatically with `restart: true`.
-    //  > TODO: it would be good to send this message also in h2:dev with Vite.
-    //  > However, that requires a completely different type of wiring:
-    //  > Getting Vite's HMR notifications from this part of the code somehow.
+    sendReloadWarning();
+  }
+
+  function sendReloadWarning() {
     debuggerWs?.send(
       JSON.stringify({
         method: 'Runtime.consoleAPICalled',
@@ -265,6 +266,7 @@ export function createInspectorProxy(
       inspector = newConnection;
       onInspectorConnection();
     },
+    sendReloadWarning,
   };
 }
 

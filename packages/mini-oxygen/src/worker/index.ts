@@ -217,6 +217,9 @@ export function createMiniOxygen({
     get isDisposed() {
       return isDisposed;
     },
+    reloadInspector() {
+      reconnect?.reloadInspectorWarning();
+    },
   };
 }
 
