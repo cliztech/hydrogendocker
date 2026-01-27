@@ -1,5 +1,6 @@
 import {describe, it, expect, vi, beforeEach, afterEach} from 'vitest';
 import {platform, userInfo} from 'node:os';
+import {writeFile} from 'node:fs/promises';
 import {fileExists} from '@shopify/cli-kit/node/fs';
 import {getPackageManager} from '@shopify/cli-kit/node/node-package-manager';
 import {
@@ -12,6 +13,7 @@ import {PromiseWithChild} from 'node:child_process';
 
 vi.mock('node:os');
 vi.mock('node:child_process');
+vi.mock('node:fs/promises');
 vi.mock('@shopify/cli-kit/node/fs');
 vi.mock('@shopify/cli-kit/node/node-package-manager');
 vi.mock('./process.js', async () => {
@@ -107,13 +109,23 @@ describe('shell', () => {
     it('creates aliases for Windows', async () => {
       // Given
       vi.mocked(platform).mockReturnValue('win32');
+      vi.mocked(execAsync).mockImplementation((cmd) => {
+        if (cmd === 'npm prefix -g') {
+          return Promise.resolve({stdout: 'C:\\npm\\prefix', stderr: ''}) as any;
+        }
+        return Promise.resolve({stdout: '', stderr: ''}) as any;
+      });
 
       // When
       const result = await createPlatformShortcut();
 
       // Then
       expect(result).toEqual(
-        expect.arrayContaining(['PowerShell', 'PowerShell 7+']),
+        expect.arrayContaining(['PowerShell', 'PowerShell 7+', 'CMD']),
+      );
+      expect(writeFile).toHaveBeenCalledWith(
+        expect.stringMatching(/C:.*npm.*prefix.*h2\.cmd$/),
+        expect.stringContaining('@ECHO OFF'),
       );
     });
 
