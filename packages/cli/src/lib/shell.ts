@@ -1,4 +1,5 @@
 import os from 'node:os';
+import {writeFile} from 'node:fs/promises';
 import {fileExists} from '@shopify/cli-kit/node/fs';
 import {joinPath} from '@shopify/cli-kit/node/path';
 import {outputDebug} from '@shopify/cli-kit/node/output';
@@ -186,6 +187,24 @@ if (!$profileContent -or $profileContent -NotLike '*Invoke-Local-H2*') {
 }
 `;
 
+const CMD_MACRO = `@ECHO OFF
+FOR /F "tokens=*" %%g IN ('npm prefix -s') do (SET "NPM_PREFIX=%%g")
+"%NPM_PREFIX%\\node_modules\\.bin\\shopify.cmd" hydrogen %*
+`;
+
+async function createCmdShortcut() {
+  try {
+    const {stdout} = await execAsync('npm prefix -g');
+    const npmPrefix = stdout.trim();
+    const batchFilePath = joinPath(npmPrefix, `${ALIAS_NAME}.cmd`);
+    await writeFile(batchFilePath, CMD_MACRO);
+    return true;
+  } catch (error) {
+    outputDebug(`Could not create CMD shortcut: ${(error as Error).stack}`);
+    return false;
+  }
+}
+
 async function createShortcutsForWindows() {
   const shells: WindowsShell[] = [];
 
@@ -200,7 +219,9 @@ async function createShortcutsForWindows() {
     shells.push('PowerShell 7+');
   }
 
-  // TODO: support CMD?
+  if (await createCmdShortcut()) {
+    shells.push('CMD');
+  }
 
   return shells;
 }
