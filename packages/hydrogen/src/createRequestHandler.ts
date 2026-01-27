@@ -7,7 +7,6 @@ import {
 import {storefrontContext} from './context-keys';
 import {HYDROGEN_SFAPI_PROXY_KEY} from './constants';
 import {appendServerTimingHeader} from './utils/server-timing';
-import {warnOnce} from './utils/warning';
 
 type CreateRequestHandlerOptions<Context = unknown> = {
   /** React Router's server build */
@@ -87,8 +86,7 @@ export function createRequestHandler<Context = unknown>({
 
     if (proxyStandardRoutes) {
       if (!storefront) {
-        // TODO: this should throw error in future major version
-        warnOnce(
+        throw new Error(
           '[h2:createRequestHandler] Storefront instance is required to proxy standard routes.',
         );
       }
