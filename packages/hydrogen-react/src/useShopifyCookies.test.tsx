@@ -1,7 +1,8 @@
 import {vi, afterEach, describe, expect, it} from 'vitest';
-import {renderHook} from '@testing-library/react';
+import {renderHook, waitFor} from '@testing-library/react';
 import {getShopifyCookies} from './cookies-utils.js';
 import {useShopifyCookies} from './useShopifyCookies.js';
+import {SFAPI_VERSION} from './storefront-api-constants.js';
 // @ts-ignore - worktop/cookie types not properly exported
 import {parse} from 'worktop/cookie';
 
@@ -335,5 +336,29 @@ describe(`useShopifyCookies`, () => {
     expect(cookieJar['_shopify_y']).toMatchObject({
       maxage: 31104000,
     });
+  });
+
+  it('calls stable endpoint when fetchTrackingValues is true', async () => {
+    const fetchSpy = vi.spyOn(window, 'fetch').mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({data: {}}),
+      } as Response),
+    );
+
+    renderHook(() =>
+      useShopifyCookies({
+        hasUserConsent: true,
+        fetchTrackingValues: true,
+        storefrontAccessToken: 'test-token',
+      }),
+    );
+
+    await waitFor(() => {
+      expect(fetchSpy).toHaveBeenCalled();
+    });
+
+    const url = fetchSpy.mock.calls[0][0] as string;
+    expect(url).toContain(`/api/${SFAPI_VERSION}/graphql.json`);
   });
 });

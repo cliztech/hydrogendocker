@@ -1,0 +1,685 @@
+turbo 2.3.4
+
+• Packages in scope: @shopify/hydrogen-react
+• Running test in 1 packages
+• Remote caching disabled
+@shopify/hydrogen-react:build: cache hit, replaying logs 41302fc9dd47488a
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build
+@shopify/hydrogen-react:build: > npm-run-all --sequential clean-dist --parallel build:vite:* build:tsc:es --parallel build:tsc:cjs copy-api-types
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 clean-dist
+@shopify/hydrogen-react:build: > rimraf ./dist
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build:vite:node-dev
+@shopify/hydrogen-react:build: > vite build --mode devbuild --ssr
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build:vite:node-prod
+@shopify/hydrogen-react:build: > vite build --ssr
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build:vite:browser-dev
+@shopify/hydrogen-react:build: > vite build --mode devbuild
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build:vite:umddev
+@shopify/hydrogen-react:build: > vite build --mode umdbuilddev
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build:vite:browser-prod
+@shopify/hydrogen-react:build: > vite build
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build:vite:umdprod
+@shopify/hydrogen-react:build: > vite build --mode umdbuild
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build:tsc:es
+@shopify/hydrogen-react:build: > tsc --emitDeclarationOnly --project tsconfig.typeoutput.json
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: NODE_ENV=production is not supported in the .env file. Only NODE_ENV=development is supported to create a development build of your project. If you need to set process.env.NODE_ENV, you can set it in the Vite config instead.
+@shopify/hydrogen-react:build: vite v6.3.6 building SSR bundle for production...
+@shopify/hydrogen-react:build: vite v6.3.6 building SSR bundle for devbuild...
+@shopify/hydrogen-react:build: transforming...
+@shopify/hydrogen-react:build: NODE_ENV=production is not supported in the .env file. Only NODE_ENV=development is supported to create a development build of your project. If you need to set process.env.NODE_ENV, you can set it in the Vite config instead.
+@shopify/hydrogen-react:build: transforming...
+@shopify/hydrogen-react:build: vite v6.3.6 building for umdbuilddev...
+@shopify/hydrogen-react:build: vite v6.3.6 building for devbuild...
+@shopify/hydrogen-react:build: transforming...
+@shopify/hydrogen-react:build: vite v6.3.6 building for production...
+@shopify/hydrogen-react:build: transforming...
+@shopify/hydrogen-react:build: vite v6.3.6 building for umdbuild...
+@shopify/hydrogen-react:build: transforming...
+@shopify/hydrogen-react:build: transforming...
+@shopify/hydrogen-react:build: ✓ 62 modules transformed.
+@shopify/hydrogen-react:build: ✓ 64 modules transformed.
+@shopify/hydrogen-react:build: ✓ 64 modules transformed.
+@shopify/hydrogen-react:build: ✓ 64 modules transformed.
+@shopify/hydrogen-react:build: ✓ 62 modules transformed.
+@shopify/hydrogen-react:build: ✓ 64 modules transformed.
+@shopify/hydrogen-react:build: rendering chunks...
+@shopify/hydrogen-react:build: rendering chunks...
+@shopify/hydrogen-react:build: rendering chunks...
+@shopify/hydrogen-react:build: rendering chunks...
+@shopify/hydrogen-react:build: computing gzip size...
+@shopify/hydrogen-react:build: dist/umd/hydrogen-react.prod.js  74.35 kB │ gzip: 24.08 kB │ map: 367.64 kB
+@shopify/hydrogen-react:build: ✓ built in 1.92s
+@shopify/hydrogen-react:build: rendering chunks...
+@shopify/hydrogen-react:build: rendering chunks...
+@shopify/hydrogen-react:build: dist/node-prod/packages/hydrogen-react/package.json.mjs                                                                 0.09 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/index.mjs                                                                                       0.09 kB │ map:  0.09 kB
+@shopify/hydrogen-react:build: dist/node-prod/storefront-api-constants.mjs                                                                             0.12 kB │ map:  0.21 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/with-selector2.mjs                                                                              0.12 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/with-selector.development.mjs                                                                   0.14 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/with-selector.production.min.mjs                                                                0.15 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/use-sync-external-store-shim.development.mjs                                                    0.18 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/use-sync-external-store-shim.production.min.mjs                                                 0.19 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/with-selector.mjs                                                                               0.25 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/@xstate/react/es/useConstant.mjs                                                            0.25 kB │ map:  0.54 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartLineQuantity.mjs                                                                                     0.42 kB │ map:  1.54 kB
+@shopify/hydrogen-react:build: dist/node-prod/cart-constants.mjs                                                                                       0.49 kB │ map:  0.66 kB
+@shopify/hydrogen-react:build: dist/node-prod/codegen.helpers.mjs                                                                                      0.53 kB │ map:  1.33 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartLineProvider.mjs                                                                                     0.58 kB │ map:  1.69 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/shim/index.mjs                                                      0.74 kB │ map:  0.59 kB
+@shopify/hydrogen-react:build: dist/node-prod/flatten-connection.mjs                                                                                   0.76 kB │ map:  3.58 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/shim/with-selector.mjs                                              0.81 kB │ map:  0.64 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartCost.mjs                                                                                             0.84 kB │ map:  2.11 kB
+@shopify/hydrogen-react:build: dist/node-prod/BaseButton.mjs                                                                                           0.84 kB │ map:  2.55 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartCheckoutButton.mjs                                                                                   0.86 kB │ map:  2.23 kB
+@shopify/hydrogen-react:build: dist/node-prod/useSelectedOptionInUrlParam.mjs                                                                          1.07 kB │ map:  2.02 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics-constants.mjs                                                                                  1.19 kB │ map:  3.10 kB
+@shopify/hydrogen-react:build: dist/node-prod/BuyNowButton.mjs                                                                                         1.19 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/node-prod/ExternalVideo.mjs                                                                                        1.23 kB │ map:  4.28 kB
+@shopify/hydrogen-react:build: dist/node-prod/Money.mjs                                                                                                1.31 kB │ map:  5.76 kB
+@shopify/hydrogen-react:build: dist/node-prod/RichText.components.mjs                                                                                  1.39 kB │ map:  3.88 kB
+@shopify/hydrogen-react:build: dist/node-prod/Video.mjs                                                                                                1.40 kB │ map:  3.00 kB
+@shopify/hydrogen-react:build: dist/node-prod/cookies-utils.mjs                                                                                        1.42 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/node-prod/load-script.mjs                                                                                          1.48 kB │ map:  3.10 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics-utils.mjs                                                                                      1.61 kB │ map:  4.18 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartLineQuantityAdjustButton.mjs                                                                         1.69 kB │ map:  3.29 kB
+@shopify/hydrogen-react:build: dist/node-prod/cart-hooks.mjs                                                                                           1.88 kB │ map:  5.04 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics-schema-trekkie-storefront-page-view.mjs                                                        1.90 kB │ map:  3.40 kB
+@shopify/hydrogen-react:build: dist/node-prod/MediaFile.mjs                                                                                            2.03 kB │ map:  4.52 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.min.mjs                 2.03 kB │ map:  2.42 kB
+@shopify/hydrogen-react:build: dist/node-prod/AddToCartButton.mjs                                                                                      2.16 kB │ map:  4.70 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.min.mjs   2.21 kB │ map:  2.71 kB
+@shopify/hydrogen-react:build: dist/node-prod/ProductPrice.mjs                                                                                         2.26 kB │ map:  4.65 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/@xstate/react/es/fsm.mjs                                                                    2.99 kB │ map:  5.43 kB
+@shopify/hydrogen-react:build: dist/node-prod/ShopPayButton.mjs                                                                                        3.09 kB │ map:  7.22 kB
+@shopify/hydrogen-react:build: dist/node-prod/optionValueDecoder.mjs                                                                                   3.30 kB │ map: 11.36 kB
+@shopify/hydrogen-react:build: dist/node-prod/tracking-utils.mjs                                                                                       3.46 kB │ map:  8.49 kB
+@shopify/hydrogen-react:build: dist/node-prod/ShopifyProvider.mjs                                                                                      3.51 kB │ map: 10.16 kB
+@shopify/hydrogen-react:build: dist/node-prod/index.mjs                                                                                                3.52 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-prod/RichText.mjs                                                                                             3.98 kB │ map:  8.88 kB
+@shopify/hydrogen-react:build: dist/node-prod/storefront-client.mjs                                                                                    4.01 kB │ map: 12.46 kB
+@shopify/hydrogen-react:build: dist/node-prod/parse-metafield.mjs                                                                                      4.35 kB │ map: 19.70 kB
+@shopify/hydrogen-react:build: dist/node-prod/useCartActions.mjs                                                                                       4.44 kB │ map:  9.17 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.mjs      4.51 kB │ map:  7.96 kB
+@shopify/hydrogen-react:build: dist/node-prod/useShopifyCookies.mjs                                                                                    4.99 kB │ map: 11.68 kB
+@shopify/hydrogen-react:build: dist/node-prod/ModelViewer.mjs                                                                                          5.28 kB │ map: 13.62 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics.mjs                                                                                            5.41 kB │ map: 10.39 kB
+@shopify/hydrogen-react:build: dist/node-prod/useMoney.mjs                                                                                             5.53 kB │ map: 14.46 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.mjs                    5.55 kB │ map: 11.44 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/@xstate/fsm/es/index.mjs                                                                    5.67 kB │ map:  9.26 kB
+@shopify/hydrogen-react:build: dist/node-prod/cart-queries.mjs                                                                                         5.76 kB │ map:  7.77 kB
+@shopify/hydrogen-react:build: dist/node-prod/ProductProvider.mjs                                                                                      6.69 kB │ map: 16.37 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics-schema-custom-storefront-customer-tracking.mjs                                                 7.12 kB │ map: 12.73 kB
+@shopify/hydrogen-react:build: dist/node-prod/getProductOptions.mjs                                                                                    8.65 kB │ map: 19.50 kB
+@shopify/hydrogen-react:build: dist/node-prod/Image.mjs                                                                                               10.04 kB │ map: 28.43 kB
+@shopify/hydrogen-react:build: dist/node-prod/useCartAPIStateMachine.mjs                                                                              12.50 kB │ map: 20.81 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartProvider.mjs                                                                                        14.18 kB │ map: 26.69 kB
+@shopify/hydrogen-react:build: computing gzip size...
+@shopify/hydrogen-react:build: computing gzip size...
+@shopify/hydrogen-react:build: dist/umd/hydrogen-react.dev.js  170.43 kB │ gzip: 35.77 kB │ map: 382.10 kB
+@shopify/hydrogen-react:build: ✓ built in 2.42s
+@shopify/hydrogen-react:build: computing gzip size...
+@shopify/hydrogen-react:build: dist/browser-dev/packages/hydrogen-react/package.json.mjs                                                                 0.09 kB │ gzip: 0.11 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/browser-dev/_virtual/index.mjs                                                                                       0.09 kB │ gzip: 0.11 kB │ map:  0.09 kB
+@shopify/hydrogen-react:build: dist/browser-dev/storefront-api-constants.mjs                                                                             0.12 kB │ gzip: 0.12 kB │ map:  0.21 kB
+@shopify/hydrogen-react:build: dist/browser-dev/_virtual/with-selector2.mjs                                                                              0.12 kB │ gzip: 0.12 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/browser-dev/_virtual/with-selector.development.mjs                                                                   0.14 kB │ gzip: 0.12 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/browser-dev/_virtual/with-selector.production.min.mjs                                                                0.15 kB │ gzip: 0.13 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/browser-dev/_virtual/use-sync-external-store-shim.development.mjs                                                    0.18 kB │ gzip: 0.14 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/browser-dev/_virtual/use-sync-external-store-shim.production.min.mjs                                                 0.19 kB │ gzip: 0.14 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/browser-dev/_virtual/with-selector.mjs                                                                               0.25 kB │ gzip: 0.18 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/@xstate/react/es/useConstant.mjs                                                            0.25 kB │ gzip: 0.18 kB │ map:  0.54 kB
+@shopify/hydrogen-react:build: dist/browser-dev/CartLineQuantity.mjs                                                                                     0.42 kB │ gzip: 0.27 kB │ map:  1.54 kB
+@shopify/hydrogen-react:build: dist/browser-dev/cart-constants.mjs                                                                                       0.49 kB │ gzip: 0.21 kB │ map:  0.66 kB
+@shopify/hydrogen-react:build: dist/browser-dev/codegen.helpers.mjs                                                                                      0.53 kB │ gzip: 0.25 kB │ map:  1.33 kB
+@shopify/hydrogen-react:build: dist/browser-dev/CartLineProvider.mjs                                                                                     0.58 kB │ gzip: 0.31 kB │ map:  1.69 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/use-sync-external-store/shim/index.mjs                                                      0.74 kB │ gzip: 0.31 kB │ map:  0.59 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/use-sync-external-store/shim/with-selector.mjs                                              0.81 kB │ gzip: 0.32 kB │ map:  0.64 kB
+@shopify/hydrogen-react:build: dist/browser-dev/CartCost.mjs                                                                                             0.84 kB │ gzip: 0.35 kB │ map:  2.11 kB
+@shopify/hydrogen-react:build: dist/browser-dev/BaseButton.mjs                                                                                           0.84 kB │ gzip: 0.42 kB │ map:  2.55 kB
+@shopify/hydrogen-react:build: dist/browser-dev/CartCheckoutButton.mjs                                                                                   0.86 kB │ gzip: 0.41 kB │ map:  2.23 kB
+@shopify/hydrogen-react:build: dist/browser-dev/flatten-connection.mjs                                                                                   0.87 kB │ gzip: 0.38 kB │ map:  3.61 kB
+@shopify/hydrogen-react:build: dist/browser-dev/useSelectedOptionInUrlParam.mjs                                                                          1.07 kB │ gzip: 0.45 kB │ map:  2.02 kB
+@shopify/hydrogen-react:build: dist/browser-dev/analytics-constants.mjs                                                                                  1.19 kB │ gzip: 0.51 kB │ map:  3.10 kB
+@shopify/hydrogen-react:build: dist/browser-dev/BuyNowButton.mjs                                                                                         1.19 kB │ gzip: 0.54 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/browser-dev/ExternalVideo.mjs                                                                                        1.23 kB │ gzip: 0.59 kB │ map:  4.28 kB
+@shopify/hydrogen-react:build: dist/browser-dev/Money.mjs                                                                                                1.31 kB │ gzip: 0.55 kB │ map:  5.76 kB
+@shopify/hydrogen-react:build: dist/browser-dev/RichText.components.mjs                                                                                  1.39 kB │ gzip: 0.49 kB │ map:  3.88 kB
+@shopify/hydrogen-react:build: dist/browser-dev/Video.mjs                                                                                                1.40 kB │ gzip: 0.60 kB │ map:  3.00 kB
+@shopify/hydrogen-react:build: dist/browser-dev/cookies-utils.mjs                                                                                        1.42 kB │ gzip: 0.63 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/browser-dev/load-script.mjs                                                                                          1.48 kB │ gzip: 0.65 kB │ map:  3.10 kB
+@shopify/hydrogen-react:build: dist/browser-dev/analytics-utils.mjs                                                                                      1.61 kB │ gzip: 0.68 kB │ map:  4.18 kB
+@shopify/hydrogen-react:build: dist/browser-dev/CartLineQuantityAdjustButton.mjs                                                                         1.69 kB │ gzip: 0.59 kB │ map:  3.29 kB
+@shopify/hydrogen-react:build: dist/browser-dev/cart-hooks.mjs                                                                                           1.88 kB │ gzip: 0.70 kB │ map:  5.04 kB
+@shopify/hydrogen-react:build: dist/browser-dev/analytics-schema-trekkie-storefront-page-view.mjs                                                        1.90 kB │ gzip: 0.80 kB │ map:  3.40 kB
+@shopify/hydrogen-react:build: dist/browser-dev/MediaFile.mjs                                                                                            1.96 kB │ gzip: 0.71 kB │ map:  4.50 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.min.mjs                 2.03 kB │ gzip: 0.76 kB │ map:  2.42 kB
+@shopify/hydrogen-react:build: dist/browser-dev/AddToCartButton.mjs                                                                                      2.16 kB │ gzip: 0.85 kB │ map:  4.70 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.min.mjs   2.21 kB │ gzip: 0.86 kB │ map:  2.71 kB
+@shopify/hydrogen-react:build: dist/browser-dev/ProductPrice.mjs                                                                                         2.26 kB │ gzip: 0.74 kB │ map:  4.65 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/@xstate/react/es/fsm.mjs                                                                    2.99 kB │ gzip: 1.19 kB │ map:  5.43 kB
+@shopify/hydrogen-react:build: dist/browser-dev/ShopPayButton.mjs                                                                                        3.09 kB │ gzip: 1.07 kB │ map:  7.22 kB
+@shopify/hydrogen-react:build: dist/browser-dev/optionValueDecoder.mjs                                                                                   3.30 kB │ gzip: 1.01 kB │ map: 11.36 kB
+@shopify/hydrogen-react:build: dist/browser-dev/tracking-utils.mjs                                                                                       3.46 kB │ gzip: 1.23 kB │ map:  8.49 kB
+@shopify/hydrogen-react:build: dist/browser-dev/ShopifyProvider.mjs                                                                                      3.51 kB │ gzip: 1.24 kB │ map: 10.16 kB
+@shopify/hydrogen-react:build: dist/browser-dev/index.mjs                                                                                                3.52 kB │ gzip: 0.96 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/browser-dev/parse-metafield.mjs                                                                                      3.97 kB │ gzip: 1.09 kB │ map: 19.54 kB
+@shopify/hydrogen-react:build: dist/browser-dev/RichText.mjs                                                                                             3.98 kB │ gzip: 1.12 kB │ map:  8.88 kB
+@shopify/hydrogen-react:build: dist/browser-dev/useCartActions.mjs                                                                                       4.44 kB │ gzip: 0.63 kB │ map:  9.17 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.mjs      4.51 kB │ gzip: 1.22 kB │ map:  7.96 kB
+@shopify/hydrogen-react:build: dist/browser-dev/storefront-client.mjs                                                                                    4.81 kB │ gzip: 1.47 kB │ map: 12.70 kB
+@shopify/hydrogen-react:build: dist/browser-dev/useShopifyCookies.mjs                                                                                    4.99 kB │ gzip: 1.69 kB │ map: 11.68 kB
+@shopify/hydrogen-react:build: dist/browser-dev/ModelViewer.mjs                                                                                          5.38 kB │ gzip: 1.59 kB │ map: 13.68 kB
+@shopify/hydrogen-react:build: dist/browser-dev/analytics.mjs                                                                                            5.45 kB │ gzip: 1.68 kB │ map: 10.43 kB
+@shopify/hydrogen-react:build: dist/browser-dev/useMoney.mjs                                                                                             5.53 kB │ gzip: 1.50 kB │ map: 14.46 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.mjs                    5.55 kB │ gzip: 1.67 kB │ map: 11.44 kB
+@shopify/hydrogen-react:build: dist/browser-dev/node_modules/@xstate/fsm/es/index.mjs                                                                    5.67 kB │ gzip: 2.23 kB │ map:  9.26 kB
+@shopify/hydrogen-react:build: dist/browser-dev/cart-queries.mjs                                                                                         5.76 kB │ gzip: 1.03 kB │ map:  7.77 kB
+@shopify/hydrogen-react:build: dist/browser-dev/ProductProvider.mjs                                                                                      6.69 kB │ gzip: 1.71 kB │ map: 16.37 kB
+@shopify/hydrogen-react:build: dist/browser-dev/analytics-schema-custom-storefront-customer-tracking.mjs                                                 7.12 kB │ gzip: 1.56 kB │ map: 12.73 kB
+@shopify/hydrogen-react:build: dist/browser-dev/getProductOptions.mjs                                                                                    8.65 kB │ gzip: 1.92 kB │ map: 19.50 kB
+@shopify/hydrogen-react:build: dist/browser-dev/Image.mjs                                                                                               10.60 kB │ gzip: 2.52 kB │ map: 28.68 kB
+@shopify/hydrogen-react:build: dist/browser-dev/useCartAPIStateMachine.mjs                                                                              12.50 kB │ gzip: 2.02 kB │ map: 20.81 kB
+@shopify/hydrogen-react:build: dist/browser-dev/CartProvider.mjs                                                                                        14.18 kB │ gzip: 3.23 kB │ map: 26.69 kB
+@shopify/hydrogen-react:build: ✓ built in 2.36s
+@shopify/hydrogen-react:build: dist/browser-prod/packages/hydrogen-react/package.json.mjs                                                                 0.09 kB │ gzip: 0.11 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/browser-prod/_virtual/index.mjs                                                                                       0.09 kB │ gzip: 0.11 kB │ map:  0.09 kB
+@shopify/hydrogen-react:build: dist/browser-prod/storefront-api-constants.mjs                                                                             0.12 kB │ gzip: 0.12 kB │ map:  0.21 kB
+@shopify/hydrogen-react:build: dist/browser-prod/_virtual/with-selector2.mjs                                                                              0.12 kB │ gzip: 0.12 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/browser-prod/_virtual/with-selector.development.mjs                                                                   0.14 kB │ gzip: 0.12 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/browser-prod/_virtual/with-selector.production.min.mjs                                                                0.15 kB │ gzip: 0.13 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/browser-prod/_virtual/use-sync-external-store-shim.development.mjs                                                    0.18 kB │ gzip: 0.14 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/browser-prod/_virtual/use-sync-external-store-shim.production.min.mjs                                                 0.19 kB │ gzip: 0.14 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/browser-prod/_virtual/with-selector.mjs                                                                               0.25 kB │ gzip: 0.18 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/@xstate/react/es/useConstant.mjs                                                            0.25 kB │ gzip: 0.18 kB │ map:  0.54 kB
+@shopify/hydrogen-react:build: dist/browser-prod/CartLineQuantity.mjs                                                                                     0.42 kB │ gzip: 0.27 kB │ map:  1.54 kB
+@shopify/hydrogen-react:build: dist/browser-prod/cart-constants.mjs                                                                                       0.49 kB │ gzip: 0.21 kB │ map:  0.66 kB
+@shopify/hydrogen-react:build: dist/browser-prod/codegen.helpers.mjs                                                                                      0.53 kB │ gzip: 0.25 kB │ map:  1.33 kB
+@shopify/hydrogen-react:build: dist/browser-prod/CartLineProvider.mjs                                                                                     0.58 kB │ gzip: 0.31 kB │ map:  1.69 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/use-sync-external-store/shim/index.mjs                                                      0.74 kB │ gzip: 0.31 kB │ map:  0.59 kB
+@shopify/hydrogen-react:build: dist/browser-prod/flatten-connection.mjs                                                                                   0.76 kB │ gzip: 0.35 kB │ map:  3.58 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/use-sync-external-store/shim/with-selector.mjs                                              0.81 kB │ gzip: 0.32 kB │ map:  0.64 kB
+@shopify/hydrogen-react:build: dist/browser-prod/CartCost.mjs                                                                                             0.84 kB │ gzip: 0.35 kB │ map:  2.11 kB
+@shopify/hydrogen-react:build: dist/browser-prod/BaseButton.mjs                                                                                           0.84 kB │ gzip: 0.42 kB │ map:  2.55 kB
+@shopify/hydrogen-react:build: dist/browser-prod/CartCheckoutButton.mjs                                                                                   0.86 kB │ gzip: 0.41 kB │ map:  2.23 kB
+@shopify/hydrogen-react:build: dist/browser-prod/useSelectedOptionInUrlParam.mjs                                                                          1.07 kB │ gzip: 0.45 kB │ map:  2.02 kB
+@shopify/hydrogen-react:build: dist/browser-prod/analytics-constants.mjs                                                                                  1.19 kB │ gzip: 0.51 kB │ map:  3.10 kB
+@shopify/hydrogen-react:build: dist/browser-prod/BuyNowButton.mjs                                                                                         1.19 kB │ gzip: 0.54 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/browser-prod/ExternalVideo.mjs                                                                                        1.23 kB │ gzip: 0.59 kB │ map:  4.28 kB
+@shopify/hydrogen-react:build: dist/browser-prod/Money.mjs                                                                                                1.31 kB │ gzip: 0.55 kB │ map:  5.76 kB
+@shopify/hydrogen-react:build: dist/browser-prod/RichText.components.mjs                                                                                  1.39 kB │ gzip: 0.49 kB │ map:  3.88 kB
+@shopify/hydrogen-react:build: dist/browser-prod/Video.mjs                                                                                                1.40 kB │ gzip: 0.60 kB │ map:  3.00 kB
+@shopify/hydrogen-react:build: dist/browser-prod/cookies-utils.mjs                                                                                        1.42 kB │ gzip: 0.63 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/browser-prod/load-script.mjs                                                                                          1.48 kB │ gzip: 0.65 kB │ map:  3.10 kB
+@shopify/hydrogen-react:build: dist/browser-prod/analytics-utils.mjs                                                                                      1.61 kB │ gzip: 0.68 kB │ map:  4.18 kB
+@shopify/hydrogen-react:build: dist/browser-prod/CartLineQuantityAdjustButton.mjs                                                                         1.69 kB │ gzip: 0.59 kB │ map:  3.29 kB
+@shopify/hydrogen-react:build: dist/browser-prod/cart-hooks.mjs                                                                                           1.88 kB │ gzip: 0.70 kB │ map:  5.04 kB
+@shopify/hydrogen-react:build: dist/browser-prod/analytics-schema-trekkie-storefront-page-view.mjs                                                        1.90 kB │ gzip: 0.80 kB │ map:  3.40 kB
+@shopify/hydrogen-react:build: dist/browser-prod/MediaFile.mjs                                                                                            2.03 kB │ gzip: 0.73 kB │ map:  4.52 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.min.mjs                 2.03 kB │ gzip: 0.76 kB │ map:  2.42 kB
+@shopify/hydrogen-react:build: dist/browser-prod/AddToCartButton.mjs                                                                                      2.16 kB │ gzip: 0.85 kB │ map:  4.70 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.min.mjs   2.21 kB │ gzip: 0.86 kB │ map:  2.71 kB
+@shopify/hydrogen-react:build: dist/browser-prod/ProductPrice.mjs                                                                                         2.26 kB │ gzip: 0.74 kB │ map:  4.65 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/@xstate/react/es/fsm.mjs                                                                    2.99 kB │ gzip: 1.19 kB │ map:  5.43 kB
+@shopify/hydrogen-react:build: dist/browser-prod/ShopPayButton.mjs                                                                                        3.09 kB │ gzip: 1.07 kB │ map:  7.22 kB
+@shopify/hydrogen-react:build: dist/browser-prod/optionValueDecoder.mjs                                                                                   3.30 kB │ gzip: 1.01 kB │ map: 11.36 kB
+@shopify/hydrogen-react:build: dist/browser-prod/tracking-utils.mjs                                                                                       3.46 kB │ gzip: 1.23 kB │ map:  8.49 kB
+@shopify/hydrogen-react:build: dist/browser-prod/ShopifyProvider.mjs                                                                                      3.51 kB │ gzip: 1.24 kB │ map: 10.16 kB
+@shopify/hydrogen-react:build: dist/browser-prod/index.mjs                                                                                                3.52 kB │ gzip: 0.96 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/browser-prod/RichText.mjs                                                                                             3.98 kB │ gzip: 1.12 kB │ map:  8.88 kB
+@shopify/hydrogen-react:build: dist/browser-prod/storefront-client.mjs                                                                                    4.01 kB │ gzip: 1.21 kB │ map: 12.46 kB
+@shopify/hydrogen-react:build: dist/browser-prod/parse-metafield.mjs                                                                                      4.35 kB │ gzip: 1.16 kB │ map: 19.70 kB
+@shopify/hydrogen-react:build: dist/browser-prod/useCartActions.mjs                                                                                       4.44 kB │ gzip: 0.63 kB │ map:  9.17 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.mjs      4.51 kB │ gzip: 1.22 kB │ map:  7.96 kB
+@shopify/hydrogen-react:build: dist/browser-prod/useShopifyCookies.mjs                                                                                    4.99 kB │ gzip: 1.69 kB │ map: 11.68 kB
+@shopify/hydrogen-react:build: dist/browser-prod/ModelViewer.mjs                                                                                          5.28 kB │ gzip: 1.56 kB │ map: 13.62 kB
+@shopify/hydrogen-react:build: dist/browser-prod/analytics.mjs                                                                                            5.41 kB │ gzip: 1.68 kB │ map: 10.39 kB
+@shopify/hydrogen-react:build: dist/browser-prod/useMoney.mjs                                                                                             5.53 kB │ gzip: 1.50 kB │ map: 14.46 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.mjs                    5.55 kB │ gzip: 1.67 kB │ map: 11.44 kB
+@shopify/hydrogen-react:build: dist/browser-prod/node_modules/@xstate/fsm/es/index.mjs                                                                    5.67 kB │ gzip: 2.23 kB │ map:  9.26 kB
+@shopify/hydrogen-react:build: dist/browser-prod/cart-queries.mjs                                                                                         5.76 kB │ gzip: 1.03 kB │ map:  7.77 kB
+@shopify/hydrogen-react:build: dist/browser-prod/ProductProvider.mjs                                                                                      6.69 kB │ gzip: 1.71 kB │ map: 16.37 kB
+@shopify/hydrogen-react:build: dist/browser-prod/analytics-schema-custom-storefront-customer-tracking.mjs                                                 7.12 kB │ gzip: 1.56 kB │ map: 12.73 kB
+@shopify/hydrogen-react:build: dist/browser-prod/getProductOptions.mjs                                                                                    8.65 kB │ gzip: 1.92 kB │ map: 19.50 kB
+@shopify/hydrogen-react:build: dist/browser-prod/Image.mjs                                                                                               10.04 kB │ gzip: 2.37 kB │ map: 28.43 kB
+@shopify/hydrogen-react:build: dist/browser-prod/useCartAPIStateMachine.mjs                                                                              12.50 kB │ gzip: 2.02 kB │ map: 20.81 kB
+@shopify/hydrogen-react:build: dist/browser-prod/CartProvider.mjs                                                                                        14.18 kB │ gzip: 3.23 kB │ map: 26.69 kB
+@shopify/hydrogen-react:build: ✓ built in 2.31s
+@shopify/hydrogen-react:build: dist/node-dev/packages/hydrogen-react/package.json.mjs                                                                 0.09 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/index.mjs                                                                                       0.09 kB │ map:  0.09 kB
+@shopify/hydrogen-react:build: dist/node-dev/storefront-api-constants.mjs                                                                             0.12 kB │ map:  0.21 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/with-selector2.mjs                                                                              0.12 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/with-selector.development.mjs                                                                   0.14 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/with-selector.production.min.mjs                                                                0.15 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/use-sync-external-store-shim.development.mjs                                                    0.18 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/use-sync-external-store-shim.production.min.mjs                                                 0.19 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/with-selector.mjs                                                                               0.25 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/@xstate/react/es/useConstant.mjs                                                            0.25 kB │ map:  0.54 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartLineQuantity.mjs                                                                                     0.42 kB │ map:  1.54 kB
+@shopify/hydrogen-react:build: dist/node-dev/cart-constants.mjs                                                                                       0.49 kB │ map:  0.66 kB
+@shopify/hydrogen-react:build: dist/node-dev/codegen.helpers.mjs                                                                                      0.53 kB │ map:  1.33 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartLineProvider.mjs                                                                                     0.58 kB │ map:  1.69 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/shim/index.mjs                                                      0.74 kB │ map:  0.59 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/shim/with-selector.mjs                                              0.81 kB │ map:  0.64 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartCost.mjs                                                                                             0.84 kB │ map:  2.11 kB
+@shopify/hydrogen-react:build: dist/node-dev/BaseButton.mjs                                                                                           0.84 kB │ map:  2.55 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartCheckoutButton.mjs                                                                                   0.86 kB │ map:  2.23 kB
+@shopify/hydrogen-react:build: dist/node-dev/flatten-connection.mjs                                                                                   0.87 kB │ map:  3.61 kB
+@shopify/hydrogen-react:build: dist/node-dev/useSelectedOptionInUrlParam.mjs                                                                          1.07 kB │ map:  2.02 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics-constants.mjs                                                                                  1.19 kB │ map:  3.10 kB
+@shopify/hydrogen-react:build: dist/node-dev/BuyNowButton.mjs                                                                                         1.19 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/node-dev/ExternalVideo.mjs                                                                                        1.23 kB │ map:  4.28 kB
+@shopify/hydrogen-react:build: dist/node-dev/Money.mjs                                                                                                1.31 kB │ map:  5.76 kB
+@shopify/hydrogen-react:build: dist/node-dev/RichText.components.mjs                                                                                  1.39 kB │ map:  3.88 kB
+@shopify/hydrogen-react:build: dist/node-dev/Video.mjs                                                                                                1.40 kB │ map:  3.00 kB
+@shopify/hydrogen-react:build: dist/node-dev/cookies-utils.mjs                                                                                        1.42 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/node-dev/load-script.mjs                                                                                          1.48 kB │ map:  3.10 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics-utils.mjs                                                                                      1.61 kB │ map:  4.18 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartLineQuantityAdjustButton.mjs                                                                         1.69 kB │ map:  3.29 kB
+@shopify/hydrogen-react:build: dist/node-dev/cart-hooks.mjs                                                                                           1.88 kB │ map:  5.04 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics-schema-trekkie-storefront-page-view.mjs                                                        1.90 kB │ map:  3.40 kB
+@shopify/hydrogen-react:build: dist/node-dev/MediaFile.mjs                                                                                            1.96 kB │ map:  4.50 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.min.mjs                 2.03 kB │ map:  2.42 kB
+@shopify/hydrogen-react:build: dist/node-dev/AddToCartButton.mjs                                                                                      2.16 kB │ map:  4.70 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.min.mjs   2.21 kB │ map:  2.71 kB
+@shopify/hydrogen-react:build: dist/node-dev/ProductPrice.mjs                                                                                         2.26 kB │ map:  4.65 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/@xstate/react/es/fsm.mjs                                                                    2.99 kB │ map:  5.43 kB
+@shopify/hydrogen-react:build: dist/node-dev/ShopPayButton.mjs                                                                                        3.09 kB │ map:  7.22 kB
+@shopify/hydrogen-react:build: dist/node-dev/optionValueDecoder.mjs                                                                                   3.30 kB │ map: 11.36 kB
+@shopify/hydrogen-react:build: dist/node-dev/tracking-utils.mjs                                                                                       3.46 kB │ map:  8.49 kB
+@shopify/hydrogen-react:build: dist/node-dev/ShopifyProvider.mjs                                                                                      3.51 kB │ map: 10.16 kB
+@shopify/hydrogen-react:build: dist/node-dev/index.mjs                                                                                                3.52 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-dev/parse-metafield.mjs                                                                                      3.97 kB │ map: 19.54 kB
+@shopify/hydrogen-react:build: dist/node-dev/RichText.mjs                                                                                             3.98 kB │ map:  8.88 kB
+@shopify/hydrogen-react:build: dist/node-dev/useCartActions.mjs                                                                                       4.44 kB │ map:  9.17 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.mjs      4.51 kB │ map:  7.96 kB
+@shopify/hydrogen-react:build: dist/node-dev/storefront-client.mjs                                                                                    4.81 kB │ map: 12.70 kB
+@shopify/hydrogen-react:build: dist/node-dev/useShopifyCookies.mjs                                                                                    4.99 kB │ map: 11.68 kB
+@shopify/hydrogen-react:build: dist/node-dev/ModelViewer.mjs                                                                                          5.38 kB │ map: 13.68 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics.mjs                                                                                            5.45 kB │ map: 10.43 kB
+@shopify/hydrogen-react:build: dist/node-dev/useMoney.mjs                                                                                             5.53 kB │ map: 14.46 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.mjs                    5.55 kB │ map: 11.44 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/@xstate/fsm/es/index.mjs                                                                    5.67 kB │ map:  9.26 kB
+@shopify/hydrogen-react:build: dist/node-dev/cart-queries.mjs                                                                                         5.76 kB │ map:  7.77 kB
+@shopify/hydrogen-react:build: dist/node-dev/ProductProvider.mjs                                                                                      6.69 kB │ map: 16.37 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics-schema-custom-storefront-customer-tracking.mjs                                                 7.12 kB │ map: 12.73 kB
+@shopify/hydrogen-react:build: dist/node-dev/getProductOptions.mjs                                                                                    8.65 kB │ map: 19.50 kB
+@shopify/hydrogen-react:build: dist/node-dev/Image.mjs                                                                                               10.60 kB │ map: 28.68 kB
+@shopify/hydrogen-react:build: dist/node-dev/useCartAPIStateMachine.mjs                                                                              12.50 kB │ map: 20.81 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartProvider.mjs                                                                                        14.18 kB │ map: 26.69 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/index.js                                                                                       0.17 kB │ map:  0.09 kB
+@shopify/hydrogen-react:build: dist/node-prod/packages/hydrogen-react/package.json.js                                                                 0.18 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/with-selector2.js                                                                              0.20 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-prod/storefront-api-constants.js                                                                             0.21 kB │ map:  0.21 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/with-selector.development.js                                                                   0.22 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/with-selector.production.min.js                                                                0.23 kB │ map:  0.12 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/use-sync-external-store-shim.development.js                                                    0.26 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/use-sync-external-store-shim.production.min.js                                                 0.27 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-prod/_virtual/with-selector.js                                                                               0.33 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartLineQuantity.js                                                                                     0.56 kB │ map:  1.57 kB
+@shopify/hydrogen-react:build: dist/node-prod/codegen.helpers.js                                                                                      0.68 kB │ map:  1.33 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartLineProvider.js                                                                                     0.73 kB │ map:  1.74 kB
+@shopify/hydrogen-react:build: dist/node-prod/cart-constants.js                                                                                       0.74 kB │ map:  0.67 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/@xstate/react/es/useConstant.js                                                            0.76 kB │ map:  0.57 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/shim/index.js                                                      0.81 kB │ map:  0.60 kB
+@shopify/hydrogen-react:build: dist/node-prod/flatten-connection.js                                                                                   0.86 kB │ map:  3.59 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/shim/with-selector.js                                              0.88 kB │ map:  0.66 kB
+@shopify/hydrogen-react:build: dist/node-prod/BaseButton.js                                                                                           0.96 kB │ map:  2.58 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartCost.js                                                                                             0.98 kB │ map:  2.14 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartCheckoutButton.js                                                                                   1.01 kB │ map:  2.31 kB
+@shopify/hydrogen-react:build: dist/node-prod/useSelectedOptionInUrlParam.js                                                                          1.19 kB │ map:  2.09 kB
+@shopify/hydrogen-react:build: dist/node-prod/BuyNowButton.js                                                                                         1.33 kB │ map:  3.24 kB
+@shopify/hydrogen-react:build: dist/node-prod/ExternalVideo.js                                                                                        1.35 kB │ map:  4.32 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics-constants.js                                                                                  1.36 kB │ map:  3.11 kB
+@shopify/hydrogen-react:build: dist/node-prod/Money.js                                                                                                1.44 kB │ map:  5.82 kB
+@shopify/hydrogen-react:build: dist/node-prod/Video.js                                                                                                1.50 kB │ map:  3.08 kB
+@shopify/hydrogen-react:build: dist/node-prod/cookies-utils.js                                                                                        1.59 kB │ map:  3.20 kB
+@shopify/hydrogen-react:build: dist/node-prod/load-script.js                                                                                          1.59 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/node-prod/RichText.components.js                                                                                  1.60 kB │ map:  3.97 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics-utils.js                                                                                      1.76 kB │ map:  4.19 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartLineQuantityAdjustButton.js                                                                         1.88 kB │ map:  3.39 kB
+@shopify/hydrogen-react:build: dist/node-prod/cart-hooks.js                                                                                           1.95 kB │ map:  5.29 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics-schema-trekkie-storefront-page-view.js                                                        2.11 kB │ map:  3.52 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.min.js                 2.12 kB │ map:  2.47 kB
+@shopify/hydrogen-react:build: dist/node-prod/MediaFile.js                                                                                            2.21 kB │ map:  4.63 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.min.js   2.28 kB │ map:  2.74 kB
+@shopify/hydrogen-react:build: dist/node-prod/AddToCartButton.js                                                                                      2.34 kB │ map:  4.86 kB
+@shopify/hydrogen-react:build: dist/node-prod/ProductPrice.js                                                                                         2.42 kB │ map:  4.71 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/@xstate/react/es/fsm.js                                                                    3.11 kB │ map:  5.52 kB
+@shopify/hydrogen-react:build: dist/node-prod/optionValueDecoder.js                                                                                   3.45 kB │ map: 11.36 kB
+@shopify/hydrogen-react:build: dist/node-prod/ShopPayButton.js                                                                                        3.45 kB │ map:  7.34 kB
+@shopify/hydrogen-react:build: dist/node-prod/tracking-utils.js                                                                                       3.66 kB │ map:  8.49 kB
+@shopify/hydrogen-react:build: dist/node-prod/ShopifyProvider.js                                                                                      3.75 kB │ map: 10.29 kB
+@shopify/hydrogen-react:build: dist/node-prod/RichText.js                                                                                             4.15 kB │ map:  9.03 kB
+@shopify/hydrogen-react:build: dist/node-prod/storefront-client.js                                                                                    4.23 kB │ map: 12.50 kB
+@shopify/hydrogen-react:build: dist/node-prod/parse-metafield.js                                                                                      4.48 kB │ map: 19.73 kB
+@shopify/hydrogen-react:build: dist/node-prod/useCartActions.js                                                                                       4.55 kB │ map:  9.52 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js      4.59 kB │ map:  8.02 kB
+@shopify/hydrogen-react:build: dist/node-prod/useShopifyCookies.js                                                                                    5.22 kB │ map: 11.95 kB
+@shopify/hydrogen-react:build: dist/node-prod/index.js                                                                                                5.29 kB │ map:  0.18 kB
+@shopify/hydrogen-react:build: dist/node-prod/ModelViewer.js                                                                                          5.39 kB │ map: 13.72 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js                    5.65 kB │ map: 11.51 kB
+@shopify/hydrogen-react:build: dist/node-prod/useMoney.js                                                                                             5.67 kB │ map: 14.50 kB
+@shopify/hydrogen-react:build: dist/node-prod/node_modules/@xstate/fsm/es/index.js                                                                    5.88 kB │ map:  9.29 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics.js                                                                                            6.05 kB │ map: 10.57 kB
+@shopify/hydrogen-react:build: dist/node-prod/cart-queries.js                                                                                         6.08 kB │ map:  7.79 kB
+@shopify/hydrogen-react:build: dist/node-prod/ProductProvider.js                                                                                      6.92 kB │ map: 16.60 kB
+@shopify/hydrogen-react:build: dist/node-prod/analytics-schema-custom-storefront-customer-tracking.js                                                 7.78 kB │ map: 13.09 kB
+@shopify/hydrogen-react:build: dist/node-prod/getProductOptions.js                                                                                    8.88 kB │ map: 19.56 kB
+@shopify/hydrogen-react:build: dist/node-prod/Image.js                                                                                               10.91 kB │ map: 28.52 kB
+@shopify/hydrogen-react:build: dist/node-prod/useCartAPIStateMachine.js                                                                              12.73 kB │ map: 20.92 kB
+@shopify/hydrogen-react:build: dist/node-prod/CartProvider.js                                                                                        14.47 kB │ map: 27.04 kB
+@shopify/hydrogen-react:build: ✓ built in 2.80s
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/index.js                                                                                       0.17 kB │ map:  0.09 kB
+@shopify/hydrogen-react:build: dist/node-dev/packages/hydrogen-react/package.json.js                                                                 0.18 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/with-selector2.js                                                                              0.20 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-dev/storefront-api-constants.js                                                                             0.21 kB │ map:  0.21 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/with-selector.development.js                                                                   0.22 kB │ map:  0.11 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/with-selector.production.min.js                                                                0.23 kB │ map:  0.12 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/use-sync-external-store-shim.development.js                                                    0.26 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/use-sync-external-store-shim.production.min.js                                                 0.27 kB │ map:  0.13 kB
+@shopify/hydrogen-react:build: dist/node-dev/_virtual/with-selector.js                                                                               0.33 kB │ map:  0.10 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartLineQuantity.js                                                                                     0.56 kB │ map:  1.57 kB
+@shopify/hydrogen-react:build: dist/node-dev/codegen.helpers.js                                                                                      0.68 kB │ map:  1.33 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartLineProvider.js                                                                                     0.73 kB │ map:  1.74 kB
+@shopify/hydrogen-react:build: dist/node-dev/cart-constants.js                                                                                       0.74 kB │ map:  0.67 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/@xstate/react/es/useConstant.js                                                            0.76 kB │ map:  0.57 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/shim/index.js                                                      0.81 kB │ map:  0.60 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/shim/with-selector.js                                              0.88 kB │ map:  0.66 kB
+@shopify/hydrogen-react:build: dist/node-dev/BaseButton.js                                                                                           0.96 kB │ map:  2.58 kB
+@shopify/hydrogen-react:build: dist/node-dev/flatten-connection.js                                                                                   0.97 kB │ map:  3.62 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartCost.js                                                                                             0.98 kB │ map:  2.14 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartCheckoutButton.js                                                                                   1.01 kB │ map:  2.31 kB
+@shopify/hydrogen-react:build: dist/node-dev/useSelectedOptionInUrlParam.js                                                                          1.19 kB │ map:  2.09 kB
+@shopify/hydrogen-react:build: dist/node-dev/BuyNowButton.js                                                                                         1.33 kB │ map:  3.24 kB
+@shopify/hydrogen-react:build: dist/node-dev/ExternalVideo.js                                                                                        1.35 kB │ map:  4.32 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics-constants.js                                                                                  1.36 kB │ map:  3.11 kB
+@shopify/hydrogen-react:build: dist/node-dev/Money.js                                                                                                1.44 kB │ map:  5.82 kB
+@shopify/hydrogen-react:build: dist/node-dev/Video.js                                                                                                1.50 kB │ map:  3.08 kB
+@shopify/hydrogen-react:build: dist/node-dev/cookies-utils.js                                                                                        1.59 kB │ map:  3.20 kB
+@shopify/hydrogen-react:build: dist/node-dev/load-script.js                                                                                          1.59 kB │ map:  3.14 kB
+@shopify/hydrogen-react:build: dist/node-dev/RichText.components.js                                                                                  1.60 kB │ map:  3.97 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics-utils.js                                                                                      1.76 kB │ map:  4.19 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartLineQuantityAdjustButton.js                                                                         1.88 kB │ map:  3.39 kB
+@shopify/hydrogen-react:build: dist/node-dev/cart-hooks.js                                                                                           1.95 kB │ map:  5.29 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics-schema-trekkie-storefront-page-view.js                                                        2.11 kB │ map:  3.52 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.production.min.js                 2.12 kB │ map:  2.47 kB
+@shopify/hydrogen-react:build: dist/node-dev/MediaFile.js                                                                                            2.14 kB │ map:  4.61 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.production.min.js   2.28 kB │ map:  2.74 kB
+@shopify/hydrogen-react:build: dist/node-dev/AddToCartButton.js                                                                                      2.34 kB │ map:  4.86 kB
+@shopify/hydrogen-react:build: dist/node-dev/ProductPrice.js                                                                                         2.42 kB │ map:  4.71 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/@xstate/react/es/fsm.js                                                                    3.11 kB │ map:  5.52 kB
+@shopify/hydrogen-react:build: dist/node-dev/optionValueDecoder.js                                                                                   3.45 kB │ map: 11.36 kB
+@shopify/hydrogen-react:build: dist/node-dev/ShopPayButton.js                                                                                        3.45 kB │ map:  7.34 kB
+@shopify/hydrogen-react:build: dist/node-dev/tracking-utils.js                                                                                       3.66 kB │ map:  8.49 kB
+@shopify/hydrogen-react:build: dist/node-dev/ShopifyProvider.js                                                                                      3.75 kB │ map: 10.29 kB
+@shopify/hydrogen-react:build: dist/node-dev/parse-metafield.js                                                                                      4.10 kB │ map: 19.57 kB
+@shopify/hydrogen-react:build: dist/node-dev/RichText.js                                                                                             4.15 kB │ map:  9.03 kB
+@shopify/hydrogen-react:build: dist/node-dev/useCartActions.js                                                                                       4.55 kB │ map:  9.52 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js      4.59 kB │ map:  8.02 kB
+@shopify/hydrogen-react:build: dist/node-dev/storefront-client.js                                                                                    5.03 kB │ map: 12.74 kB
+@shopify/hydrogen-react:build: dist/node-dev/useShopifyCookies.js                                                                                    5.22 kB │ map: 11.95 kB
+@shopify/hydrogen-react:build: dist/node-dev/index.js                                                                                                5.29 kB │ map:  0.18 kB
+@shopify/hydrogen-react:build: dist/node-dev/ModelViewer.js                                                                                          5.49 kB │ map: 13.78 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js                    5.65 kB │ map: 11.51 kB
+@shopify/hydrogen-react:build: dist/node-dev/useMoney.js                                                                                             5.67 kB │ map: 14.50 kB
+@shopify/hydrogen-react:build: dist/node-dev/node_modules/@xstate/fsm/es/index.js                                                                    5.88 kB │ map:  9.29 kB
+@shopify/hydrogen-react:build: dist/node-dev/cart-queries.js                                                                                         6.08 kB │ map:  7.79 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics.js                                                                                            6.09 kB │ map: 10.61 kB
+@shopify/hydrogen-react:build: dist/node-dev/ProductProvider.js                                                                                      6.92 kB │ map: 16.60 kB
+@shopify/hydrogen-react:build: dist/node-dev/analytics-schema-custom-storefront-customer-tracking.js                                                 7.78 kB │ map: 13.09 kB
+@shopify/hydrogen-react:build: dist/node-dev/getProductOptions.js                                                                                    8.88 kB │ map: 19.56 kB
+@shopify/hydrogen-react:build: dist/node-dev/Image.js                                                                                               11.46 kB │ map: 28.77 kB
+@shopify/hydrogen-react:build: dist/node-dev/useCartAPIStateMachine.js                                                                              12.73 kB │ map: 20.92 kB
+@shopify/hydrogen-react:build: dist/node-dev/CartProvider.js                                                                                        14.47 kB │ map: 27.04 kB
+@shopify/hydrogen-react:build: ✓ built in 2.88s
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 copy-api-types
+@shopify/hydrogen-react:build: > cpy './src/storefront-api-types.d.ts' './src/customer-account-api-types.d.ts' ./dist/types/ --flat
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:build: > @shopify/hydrogen-react@2025.7.0 build:tsc:cjs
+@shopify/hydrogen-react:build: > cpy ./dist/types/index.d.ts ./dist/types/ --rename='index.d.cts' --flat
+@shopify/hydrogen-react:build:
+@shopify/hydrogen-react:test: cache hit, replaying logs f6dd60c46560dcc3
+@shopify/hydrogen-react:test:
+@shopify/hydrogen-react:test: > @shopify/hydrogen-react@2025.7.0 test
+@shopify/hydrogen-react:test: > vitest run --coverage src/useShopifyCookies.test.tsx
+@shopify/hydrogen-react:test:
+@shopify/hydrogen-react:test:
+@shopify/hydrogen-react:test:  RUN  v3.2.4 /app/packages/hydrogen-react
+@shopify/hydrogen-react:test:       Coverage enabled with v8
+@shopify/hydrogen-react:test:
+@shopify/hydrogen-react:test:  ✓ src/useShopifyCookies.test.tsx (11 tests) 65ms
+@shopify/hydrogen-react:test:
+@shopify/hydrogen-react:test:  Test Files  1 passed (1)
+@shopify/hydrogen-react:test:       Tests  11 passed (11)
+@shopify/hydrogen-react:test:    Start at  10:02:40
+@shopify/hydrogen-react:test:    Duration  2.67s (transform 112ms, setup 132ms, collect 306ms, tests 65ms, environment 290ms, prepare 107ms)
+@shopify/hydrogen-react:test:
+@shopify/hydrogen-react:test:  % Coverage report from v8
+@shopify/hydrogen-react:test: -------------------|---------|----------|---------|---------|-------------------
+@shopify/hydrogen-react:test: File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+@shopify/hydrogen-react:test: -------------------|---------|----------|---------|---------|-------------------
+@shopify/hydrogen-react:test: All files          |    2.59 |     52.4 |   49.24 |    2.59 |
+@shopify/hydrogen-react:test:  hydrogen-react    |       0 |      100 |     100 |       0 |
+@shopify/hydrogen-react:test:   codegen.ts       |       0 |      100 |     100 |       0 | 2-110
+@shopify/hydrogen-react:test:  ...cs/staticPages |       0 |    16.66 |   16.66 |       0 |
+@shopify/hydrogen-react:test:   ...ate.client.js |       0 |        0 |       0 |       0 | 1-7
+@shopify/hydrogen-react:test:   ...ate.server.js |       0 |        0 |       0 |       0 | 1-28
+@shopify/hydrogen-react:test:   ...t.example.jsx |       0 |        0 |       0 |       0 | 1-5
+@shopify/hydrogen-react:test:   hook.example.jsx |       0 |        0 |       0 |       0 | 1-13
+@shopify/hydrogen-react:test:   ...nReact.doc.ts |       0 |      100 |     100 |       0 | 3-190
+@shopify/hydrogen-react:test:   ...y.example.jsx |       0 |        0 |       0 |       0 | 1-12
+@shopify/hydrogen-react:test:  ...-react/scripts |       0 |        0 |       0 |       0 |
+@shopify/hydrogen-react:test:   prepare-next.mjs |       0 |        0 |       0 |       0 | 1-16
+@shopify/hydrogen-react:test:  ...ogen-react/src |    2.69 |     53.3 |   50.26 |    2.69 |
+@shopify/hydrogen-react:test:   ...Button.doc.ts |       0 |      100 |     100 |       0 | 3-38
+@shopify/hydrogen-react:test:   ...n.example.jsx |       0 |        0 |       0 |       0 | 1-11
+@shopify/hydrogen-react:test:   ...n.example.tsx |       0 |        0 |       0 |       0 | 1-12
+@shopify/hydrogen-react:test:   ...n.stories.tsx |       0 |      100 |     100 |       0 | 3-30
+@shopify/hydrogen-react:test:   ...artButton.tsx |       0 |        0 |       0 |       0 | 1-108
+@shopify/hydrogen-react:test:   BaseButton.tsx   |       0 |        0 |       0 |       0 | 1-65
+@shopify/hydrogen-react:test:   ...Button.doc.ts |       0 |      100 |     100 |       0 | 3-38
+@shopify/hydrogen-react:test:   ...n.example.jsx |       0 |        0 |       0 |       0 | 1-11
+@shopify/hydrogen-react:test:   ...n.example.tsx |       0 |        0 |       0 |       0 | 1-12
+@shopify/hydrogen-react:test:   BuyNowButton.tsx |       0 |        0 |       0 |       0 | 1-77
+@shopify/hydrogen-react:test:   ...Button.doc.ts |       0 |      100 |     100 |       0 | 3-39
+@shopify/hydrogen-react:test:   ...n.example.jsx |       0 |        0 |       0 |       0 | 1-5
+@shopify/hydrogen-react:test:   ...n.example.tsx |       0 |        0 |       0 |       0 | 1-5
+@shopify/hydrogen-react:test:   ...n.stories.tsx |       0 |      100 |     100 |       0 | 3-21
+@shopify/hydrogen-react:test:   ...outButton.tsx |       0 |        0 |       0 |       0 | 1-42
+@shopify/hydrogen-react:test:   CartCost.doc.ts  |       0 |      100 |     100 |       0 | 3-40
+@shopify/hydrogen-react:test:   ...t.example.jsx |       0 |        0 |       0 |       0 | 1-17
+@shopify/hydrogen-react:test:   ...t.example.tsx |       0 |        0 |       0 |       0 | 1-17
+@shopify/hydrogen-react:test:   ...t.stories.tsx |       0 |      100 |     100 |       0 | 3-40
+@shopify/hydrogen-react:test:   CartCost.tsx     |       0 |        0 |       0 |       0 | 1-43
+@shopify/hydrogen-react:test:   ...ovider.doc.ts |       0 |      100 |     100 |       0 | 3-46
+@shopify/hydrogen-react:test:   ...r.example.jsx |       0 |        0 |       0 |       0 | 1-16
+@shopify/hydrogen-react:test:   ...r.example.tsx |       0 |        0 |       0 |       0 | 1-17
+@shopify/hydrogen-react:test:   ...eProvider.tsx |       0 |        0 |       0 |       0 | 1-45
+@shopify/hydrogen-react:test:   ...antity.doc.ts |       0 |      100 |     100 |       0 | 3-51
+@shopify/hydrogen-react:test:   ...y.example.jsx |       0 |        0 |       0 |       0 | 1-9
+@shopify/hydrogen-react:test:   ...y.example.tsx |       0 |        0 |       0 |       0 | 1-10
+@shopify/hydrogen-react:test:   ...eQuantity.tsx |       0 |      100 |     100 |       0 | 2-32
+@shopify/hydrogen-react:test:   ...Button.doc.ts |       0 |      100 |     100 |       0 | 3-51
+@shopify/hydrogen-react:test:   ...n.example.jsx |       0 |        0 |       0 |       0 | 1-23
+@shopify/hydrogen-react:test:   ...n.example.tsx |       0 |        0 |       0 |       0 | 1-24
+@shopify/hydrogen-react:test:   ...ustButton.tsx |       0 |        0 |       0 |       0 | 1-76
+@shopify/hydrogen-react:test:   ...ovider.doc.ts |       0 |      100 |     100 |       0 | 3-51
+@shopify/hydrogen-react:test:   ...r.example.jsx |       0 |        0 |       0 |       0 | 1-27
+@shopify/hydrogen-react:test:   ...r.example.tsx |       0 |        0 |       0 |       0 | 1-28
+@shopify/hydrogen-react:test:   ...r.stories.tsx |       0 |        0 |       0 |       0 | 1-258
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |        0 |       0 |       0 | 1-189
+@shopify/hydrogen-react:test:   CartProvider.tsx |       0 |        0 |       0 |       0 | 1-576
+@shopify/hydrogen-react:test:   ...lVideo.doc.ts |       0 |      100 |     100 |       0 | 3-48
+@shopify/hydrogen-react:test:   ...o.example.jsx |       0 |        0 |       0 |       0 | 1-9
+@shopify/hydrogen-react:test:   ...o.example.tsx |       0 |        0 |       0 |       0 | 1-13
+@shopify/hydrogen-react:test:   ...o.stories.tsx |       0 |      100 |     100 |       0 | 3-24
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |      100 |     100 |       0 | 3-18
+@shopify/hydrogen-react:test:   ...rnalVideo.tsx |       0 |      100 |     100 |       0 | 3-74
+@shopify/hydrogen-react:test:   Image.doc.ts     |       0 |      100 |     100 |       0 | 3-45
+@shopify/hydrogen-react:test:   ...e.example.jsx |       0 |        0 |       0 |       0 | 1-29
+@shopify/hydrogen-react:test:   ...e.example.tsx |       0 |      100 |     100 |       0 | 2-31
+@shopify/hydrogen-react:test:   ...e.stories.tsx |       0 |      100 |     100 |       0 | 3-68
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |        0 |       0 |       0 | 1-18
+@shopify/hydrogen-react:test:   Image.tsx        |       0 |      100 |     100 |       0 | 3-759
+@shopify/hydrogen-react:test:   MediaFile.doc.ts |       0 |      100 |     100 |       0 | 3-61
+@shopify/hydrogen-react:test:   ...e.example.jsx |       0 |        0 |       0 |       0 | 1-11
+@shopify/hydrogen-react:test:   ...e.example.tsx |       0 |        0 |       0 |       0 | 1-12
+@shopify/hydrogen-react:test:   ...e.stories.tsx |       0 |      100 |     100 |       0 | 3-30
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |        0 |       0 |       0 | 1-89
+@shopify/hydrogen-react:test:   MediaFile.tsx    |       0 |        0 |       0 |       0 | 1-97
+@shopify/hydrogen-react:test:   ...Viewer.doc.ts |       0 |      100 |     100 |       0 | 3-45
+@shopify/hydrogen-react:test:   ...r.example.jsx |       0 |        0 |       0 |       0 | 1-9
+@shopify/hydrogen-react:test:   ...r.example.tsx |       0 |        0 |       0 |       0 | 1-13
+@shopify/hydrogen-react:test:   ...r.stories.tsx |       0 |      100 |     100 |       0 | 3-25
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |      100 |     100 |       0 | 3-19
+@shopify/hydrogen-react:test:   ModelViewer.tsx  |       0 |        0 |       0 |       0 | 1-216
+@shopify/hydrogen-react:test:   Money.doc.ts     |       0 |      100 |     100 |       0 | 3-44
+@shopify/hydrogen-react:test:   ...y.example.jsx |       0 |        0 |       0 |       0 | 1-7
+@shopify/hydrogen-react:test:   ...y.example.tsx |       0 |        0 |       0 |       0 | 1-8
+@shopify/hydrogen-react:test:   ...y.stories.tsx |       0 |      100 |     100 |       0 | 3-43
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |      100 |     100 |       0 | 7-59
+@shopify/hydrogen-react:test:   Money.tsx        |       0 |      100 |     100 |       0 | 2-128
+@shopify/hydrogen-react:test:   ...tPrice.doc.ts |       0 |      100 |     100 |       0 | 3-49
+@shopify/hydrogen-react:test:   ...e.example.jsx |       0 |        0 |       0 |       0 | 1-5
+@shopify/hydrogen-react:test:   ...e.example.tsx |       0 |        0 |       0 |       0 | 1-6
+@shopify/hydrogen-react:test:   ...e.stories.tsx |       0 |      100 |     100 |       0 | 3-83
+@shopify/hydrogen-react:test:   ProductPrice.tsx |       0 |      100 |     100 |       0 | 6-101
+@shopify/hydrogen-react:test:   ...ovider.doc.ts |       0 |      100 |     100 |       0 | 3-49
+@shopify/hydrogen-react:test:   ...r.example.jsx |       0 |        0 |       0 |       0 | 1-24
+@shopify/hydrogen-react:test:   ...r.example.tsx |       0 |        0 |       0 |       0 | 1-25
+@shopify/hydrogen-react:test:   ...r.stories.tsx |       0 |      100 |     100 |       0 | 3-34
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |      100 |     100 |       0 | 10-313
+@shopify/hydrogen-react:test:   ...tProvider.tsx |       0 |        0 |       0 |       0 | 1-332
+@shopify/hydrogen-react:test:   ...omponents.tsx |       0 |        0 |       0 |       0 | 1-127
+@shopify/hydrogen-react:test:   RichText.doc.ts  |       0 |      100 |     100 |       0 | 3-37
+@shopify/hydrogen-react:test:   ...t.example.jsx |       0 |        0 |       0 |       0 | 1-14
+@shopify/hydrogen-react:test:   ...t.example.tsx |       0 |        0 |       0 |       0 | 1-14
+@shopify/hydrogen-react:test:   ...t.stories.tsx |       0 |      100 |     100 |       0 | 3-16
+@shopify/hydrogen-react:test:   ...t.helpers.tsx |       0 |      100 |     100 |       0 | 3-161
+@shopify/hydrogen-react:test:   RichText.tsx     |       0 |        0 |       0 |       0 | 1-209
+@shopify/hydrogen-react:test:   ...ext.types.tsx |       0 |        0 |       0 |       0 |
+@shopify/hydrogen-react:test:   ...Button.doc.ts |       0 |      100 |     100 |       0 | 3-61
+@shopify/hydrogen-react:test:   ...n.example.jsx |       0 |        0 |       0 |       0 | 1-24
+@shopify/hydrogen-react:test:   ...n.example.tsx |       0 |        0 |       0 |       0 | 1-46
+@shopify/hydrogen-react:test:   ...n.stories.tsx |       0 |      100 |     100 |       0 | 3-39
+@shopify/hydrogen-react:test:   ...PayButton.tsx |       0 |        0 |       0 |       0 | 1-155
+@shopify/hydrogen-react:test:   ...2.example.jsx |       0 |        0 |       0 |       0 | 1-19
+@shopify/hydrogen-react:test:   ...2.example.tsx |       0 |        0 |       0 |       0 | 1-19
+@shopify/hydrogen-react:test:   ...ovider.doc.ts |       0 |      100 |     100 |       0 | 3-44
+@shopify/hydrogen-react:test:   ...r.example.jsx |       0 |        0 |       0 |       0 | 1-27
+@shopify/hydrogen-react:test:   ...r.example.tsx |       0 |        0 |       0 |       0 | 1-27
+@shopify/hydrogen-react:test:   ...r.stories.tsx |       0 |      100 |     100 |       0 | 2-55
+@shopify/hydrogen-react:test:   ...yProvider.tsx |       0 |        0 |       0 |       0 | 1-128
+@shopify/hydrogen-react:test:   Video.doc.ts     |       0 |      100 |     100 |       0 | 3-50
+@shopify/hydrogen-react:test:   ...o.example.jsx |       0 |        0 |       0 |       0 | 1-9
+@shopify/hydrogen-react:test:   ...o.example.tsx |       0 |        0 |       0 |       0 | 1-14
+@shopify/hydrogen-react:test:   ...o.stories.tsx |       0 |      100 |     100 |       0 | 3-25
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |      100 |     100 |       0 | 2-22
+@shopify/hydrogen-react:test:   Video.tsx        |       0 |        0 |       0 |       0 | 1-68
+@shopify/hydrogen-react:test:   ...-constants.ts |       0 |        0 |       0 |       0 | 1-43
+@shopify/hydrogen-react:test:   ...r-tracking.ts |       0 |      100 |     100 |       0 | 12-285
+@shopify/hydrogen-react:test:   ...-page-view.ts |       0 |      100 |     100 |       0 | 6-73
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |        0 |       0 |       0 | 1-28
+@shopify/hydrogen-react:test:   ...tics-types.ts |       0 |        0 |       0 |       0 |
+@shopify/hydrogen-react:test:   ...tics-utils.ts |       0 |      100 |     100 |       0 | 13-108
+@shopify/hydrogen-react:test:   analytics.doc.ts |       0 |      100 |     100 |       0 | 3-67
+@shopify/hydrogen-react:test:   ...s.example.jsx |       0 |        0 |       0 |       0 | 1-62
+@shopify/hydrogen-react:test:   ...s.example.tsx |       0 |      100 |     100 |       0 | 2-63
+@shopify/hydrogen-react:test:   analytics.ts     |       0 |      100 |     100 |       0 | 8-237
+@shopify/hydrogen-react:test:   ...-constants.ts |     100 |      100 |     100 |     100 |
+@shopify/hydrogen-react:test:   cart-hooks.tsx   |       0 |        0 |       0 |       0 | 1-129
+@shopify/hydrogen-react:test:   cart-queries.ts  |       0 |        0 |       0 |       0 | 1-165
+@shopify/hydrogen-react:test:   cart-types.ts    |       0 |        0 |       0 |       0 |
+@shopify/hydrogen-react:test:   ...elpers.doc.ts |       0 |      100 |     100 |       0 | 3-39
+@shopify/hydrogen-react:test:   ...rs.example.js |       0 |        0 |       0 |       0 | 1-19
+@shopify/hydrogen-react:test:   ...en.helpers.ts |       0 |      100 |     100 |       0 | 6-28
+@shopify/hydrogen-react:test:   ...ies-utils.tsx |      80 |    57.14 |     100 |      80 | 27-34,50-51
+@shopify/hydrogen-react:test:   ...ection.doc.ts |       0 |      100 |     100 |       0 | 3-44
+@shopify/hydrogen-react:test:   ...n.example.jsx |       0 |        0 |       0 |       0 | 1-12
+@shopify/hydrogen-react:test:   ...n.example.tsx |       0 |        0 |       0 |       0 | 1-17
+@shopify/hydrogen-react:test:   ...connection.ts |       0 |      100 |     100 |       0 | 9-78
+@shopify/hydrogen-react:test:   ...meters.doc.ts |       0 |      100 |     100 |       0 | 3-51
+@shopify/hydrogen-react:test:   ...s.example.jsx |       0 |        0 |       0 |       0 | 1-11
+@shopify/hydrogen-react:test:   ...s.example.tsx |       0 |      100 |     100 |       0 | 2-11
+@shopify/hydrogen-react:test:   ...ookies.doc.ts |       0 |      100 |     100 |       0 | 3-57
+@shopify/hydrogen-react:test:   ...s.example.jsx |       0 |        0 |       0 |       0 | 1-11
+@shopify/hydrogen-react:test:   ...s.example.tsx |       0 |      100 |     100 |       0 | 2-11
+@shopify/hydrogen-react:test:   ...ptions.doc.ts |       0 |      100 |     100 |       0 | 3-47
+@shopify/hydrogen-react:test:   ...s.example.jsx |       0 |        0 |       0 |       0 | 1-119
+@shopify/hydrogen-react:test:   ...s.example.tsx |       0 |      100 |     100 |       0 | 2-131
+@shopify/hydrogen-react:test:   ...riants.doc.ts |       0 |      100 |     100 |       0 | 3-43
+@shopify/hydrogen-react:test:   ...ts.example.js |       0 |        0 |       0 |       0 | 1-17
+@shopify/hydrogen-react:test:   ...Object.doc.ts |       0 |      100 |     100 |       0 | 3-43
+@shopify/hydrogen-react:test:   ...ct.example.js |       0 |        0 |       0 |       0 | 1-23
+@shopify/hydrogen-react:test:   ...uctOptions.ts |       0 |        0 |       0 |       0 | 1-492
+@shopify/hydrogen-react:test:   index.ts         |       0 |        0 |       0 |       0 | 1-86
+@shopify/hydrogen-react:test:   ...script.doc.ts |       0 |      100 |     100 |       0 | 3-38
+@shopify/hydrogen-react:test:   ...t.example.jsx |       0 |        0 |       0 |       0 | 1-14
+@shopify/hydrogen-react:test:   ...t.example.tsx |       0 |        0 |       0 |       0 | 1-14
+@shopify/hydrogen-react:test:   load-script.tsx  |       0 |        0 |       0 |       0 | 1-78
+@shopify/hydrogen-react:test:   ...ariant.doc.ts |       0 |      100 |     100 |       0 | 3-39
+@shopify/hydrogen-react:test:   ...nt.example.js |       0 |        0 |       0 |       0 | 1-34
+@shopify/hydrogen-react:test:   ...ariant.doc.ts |       0 |      100 |     100 |       0 | 3-40
+@shopify/hydrogen-react:test:   ...nt.example.js |       0 |        0 |       0 |       0 | 1-45
+@shopify/hydrogen-react:test:   ...lueDecoder.ts |       0 |      100 |     100 |       0 | 14-193
+@shopify/hydrogen-react:test:   parse-gid.doc.ts |       0 |      100 |     100 |       0 | 3-34
+@shopify/hydrogen-react:test:   ...id.example.js |       0 |        0 |       0 |       0 | 1-6
+@shopify/hydrogen-react:test:   ...afield.doc.ts |       0 |      100 |     100 |       0 | 3-40
+@shopify/hydrogen-react:test:   ...d.example.jsx |       0 |        0 |       0 |       0 | 1-23
+@shopify/hydrogen-react:test:   ...d.example.tsx |       0 |        0 |       0 |       0 | 1-30
+@shopify/hydrogen-react:test:   ...st.helpers.ts |       0 |        0 |       0 |       0 | 1-118
+@shopify/hydrogen-react:test:   ...-metafield.ts |       0 |      100 |     100 |       0 | 12-238
+@shopify/hydrogen-react:test:   ...-constants.ts |     100 |      100 |     100 |     100 |
+@shopify/hydrogen-react:test:   ...onse.types.ts |       0 |        0 |       0 |       0 |
+@shopify/hydrogen-react:test:   ...-types.doc.ts |       0 |      100 |     100 |       0 | 3-39
+@shopify/hydrogen-react:test:   ...s.example.tsx |       0 |      100 |     100 |       0 | 6-19
+@shopify/hydrogen-react:test:   ...client.doc.ts |       0 |      100 |     100 |       0 | 3-40
+@shopify/hydrogen-react:test:   ...nt.example.js |       0 |        0 |       0 |       0 | 1-39
+@shopify/hydrogen-react:test:   ...ont-client.ts |       0 |        0 |       0 |       0 | 1-187
+@shopify/hydrogen-react:test:   ...a.json.doc.ts |       0 |      100 |     100 |       0 | 3-39
+@shopify/hydrogen-react:test:   ...-utils.doc.ts |       0 |      100 |     100 |       0 | 3-52
+@shopify/hydrogen-react:test:   ...s.example.jsx |       0 |        0 |       0 |       0 | 1-15
+@shopify/hydrogen-react:test:   ...s.example.tsx |       0 |        0 |       0 |       0 | 1-15
+@shopify/hydrogen-react:test:   ...king-utils.ts |   58.69 |     42.1 |     100 |   58.69 | ...48-164,167-168
+@shopify/hydrogen-react:test:   useCart.doc.ts   |       0 |      100 |     100 |       0 | 3-44
+@shopify/hydrogen-react:test:   ...teMachine.tsx |       0 |        0 |       0 |       0 | 1-461
+@shopify/hydrogen-react:test:   ...rtActions.tsx |       0 |        0 |       0 |       0 | 1-224
+@shopify/hydrogen-react:test:   ...rtLine.doc.ts |       0 |      100 |     100 |       0 | 3-46
+@shopify/hydrogen-react:test:   useMoney.doc.ts  |       0 |      100 |     100 |       0 | 3-48
+@shopify/hydrogen-react:test:   ...y.example.jsx |       0 |        0 |       0 |       0 | 1-20
+@shopify/hydrogen-react:test:   ...y.example.tsx |       0 |        0 |       0 |       0 | 1-22
+@shopify/hydrogen-react:test:   useMoney.tsx     |       0 |        0 |       0 |       0 | 1-325
+@shopify/hydrogen-react:test:   ...roduct.doc.ts |       0 |      100 |     100 |       0 | 3-44
+@shopify/hydrogen-react:test:   ...lParam.doc.ts |       0 |      100 |     100 |       0 | 3-37
+@shopify/hydrogen-react:test:   ...am.example.js |       0 |        0 |       0 |       0 | 1-16
+@shopify/hydrogen-react:test:   ...nUrlParam.tsx |       0 |        0 |       0 |       0 | 1-37
+@shopify/hydrogen-react:test:   useShop.doc.ts   |       0 |      100 |     100 |       0 | 3-45
+@shopify/hydrogen-react:test:   ...ookies.doc.ts |       0 |      100 |     100 |       0 | 3-58
+@shopify/hydrogen-react:test:   ...s.example.jsx |       0 |        0 |       0 |       0 | 1-13
+@shopify/hydrogen-react:test:   ...s.example.tsx |       0 |      100 |     100 |       0 | 2-19
+@shopify/hydrogen-react:test:   ...fyCookies.tsx |   87.73 |    88.23 |     100 |   87.73 | ...52-259,262-265
+@shopify/hydrogen-react:test: -------------------|---------|----------|---------|---------|-------------------
+
+ Tasks:    2 successful, 2 total
+Cached:    2 cached, 2 total
+  Time:    290ms >>> FULL TURBO
