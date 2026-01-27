@@ -2,6 +2,7 @@ import {useEffect, useRef, useState} from 'react';
 // @ts-ignore - worktop/cookie types not properly exported
 import {stringify} from 'worktop/cookie';
 import {SHOPIFY_Y, SHOPIFY_S} from './cart-constants.js';
+import {SFAPI_VERSION} from './storefront-api-constants.js';
 import {buildUUID} from './cookies-utils.js';
 import {
   getTrackingValues,
@@ -174,8 +175,10 @@ async function fetchTrackingValuesFromBrowser(
   const {uniqueToken, visitToken} = getTrackingValues();
 
   const response = await fetch(
-    // TODO: update this endpoint when it becomes stable
-    `${storefrontApiDomain.replace(/\/+$/, '')}/api/unstable/graphql.json`,
+    `${storefrontApiDomain.replace(
+      /\/+$/,
+      '',
+    )}/api/${SFAPI_VERSION}/graphql.json`,
     {
       method: 'POST',
       headers: {
