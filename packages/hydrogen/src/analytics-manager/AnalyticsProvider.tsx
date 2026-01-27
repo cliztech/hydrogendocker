@@ -44,6 +44,7 @@ import {
 import type {Storefront} from '../storefront';
 import {PerfKit} from './PerfKit';
 import {errorOnce, warnOnce} from '../utils/warning';
+import {isSfapiProxyEnabled} from '../utils/server-timing';
 
 export type ShopAnalytics = {
   /** The shop ID. */
@@ -317,14 +318,20 @@ function AnalyticsProvider({
         '[h2:error:Analytics.Provider] - Mock shop is used. Analytics will not work properly.',
       );
     } else {
-      // TODO: we likely don't need checkout domain if SFAPI proxy is enabled
+      // Checkout domain is not needed if SFAPI proxy is enabled,
       // but keep it for backward compatibility for now until we have checkout URL params.
       if (!consent.checkoutDomain) {
-        const errorMsg = messageOnError(
-          'consent.checkoutDomain',
-          'PUBLIC_CHECKOUT_DOMAIN',
-        );
-        errorOnce(errorMsg);
+        const isProxyEnabled =
+          typeof window !== 'undefined' &&
+          (isSfapiProxyEnabled() || consent.sameDomainForStorefrontApi);
+
+        if (!isProxyEnabled) {
+          const errorMsg = messageOnError(
+            'consent.checkoutDomain',
+            'PUBLIC_CHECKOUT_DOMAIN',
+          );
+          errorOnce(errorMsg);
+        }
       }
 
       if (!consent.storefrontAccessToken) {
