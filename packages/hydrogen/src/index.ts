@@ -130,7 +130,10 @@ export type {
   ClientBrowserParameters,
   MappedProductOptions,
   ParsedMetafields,
-  // TODO: document this change
+  /**
+   * The event object used by `sendShopifyAnalytics`.
+   * Aliased from `ShopifyAnalytics` in `@shopify/hydrogen-react`.
+   */
   ShopifyAnalytics as SendShopifyAnalyticsEvent,
   ShopifyAddToCart,
   ShopifyAddToCartPayload,
