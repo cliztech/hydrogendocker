@@ -648,10 +648,11 @@ describe('upgrade', async () => {
           expect(renderSelectPrompt).toHaveBeenCalledWith({
             message: expect.stringContaining(previousRelease!.version),
             choices: expect.arrayContaining([
-              {
+              expect.objectContaining({
+                group: expect.any(String),
                 label: expect.stringContaining(latestRelease!.version),
                 value: latestRelease,
-              },
+              }),
             ]),
             defaultValue: latestRelease,
           });

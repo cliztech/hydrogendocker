@@ -1049,7 +1049,7 @@ async function promptUpgradeOptions(
     const majorVersion = `${semver.major(version)}.${semver.minor(version)}`;
 
     return {
-      // group: majorVersion,
+      group: majorVersion,
       label: `${version} ${tag} - ${cliTruncate(title, 54)}`,
       value: release,
     };
